@@ -1,0 +1,15 @@
+{
+  "episode": 6,
+  "best_hook": {"block": "E006-S01-B029", "why": "A bride in a mud-soaked wedding gown marching into the rain saying 'at least no one there will be waiting to humiliate me' hints at a public disgrace; it is the only line with any edge."},
+  "alt_hooks": ["E006-S01-B002"],
+  "best_cliffhanger": {"block": "E006-S02-B024", "why": "Cutting on 'I am.' right after 'You are not disappointed?' leaves her answer sounding like a rejection of her scarred husband, before 'But not because of you' softens it."},
+  "alt_cliffhangers": ["E006-S02-B022", "E006-S02-B033"],
+  "must_promos": [
+    {"start_block": "E006-S01-B029", "end_block": "E006-S02-B024",
+     "hook_block": "E006-S01-B029", "cliffhanger_block": "E006-S02-B024",
+     "why": "Least bad cut: the humiliation line and the rain-soaked bride set up a riches-to-rags story, the leaking hovel and 'This is all I can give you now' raise the stakes, and the edit cuts on her admitting she is disappointed."}
+  ],
+  "promo_strength": 2,
+  "standalone_risk": "There is no antagonist on screen; a stranger does not learn who humiliated her, why she married this man, or that he is secretly more than he seems, so the clip reads as a mood piece rather than a conflict.",
+  "notes": "A quiet, cosy transition episode. The only conflict is implied (her lost home and her humiliation). The cliffhanger is manufactured by cutting before she reassures him."
+}

@@ -1,0 +1,18 @@
+{
+  "episode": 44,
+  "best_hook": {"block": "E044-S02-B003", "why": "The groom is forced to his knees in the dust at his own wedding, screaming for his bride to save him."},
+  "alt_hooks": ["E044-S02-B027", "E044-S01-B004"],
+  "best_cliffhanger": {"block": "E044-S02-B046", "why": "The jilted bride realises the Duke chose the chained prisoner: 'Her?!' leaves the rivalry wide open."},
+  "alt_cliffhangers": ["E044-S02-B039", "E044-S02-B022"],
+  "must_promos": [
+    {"start_block": "E044-S02-B002", "end_block": "E044-S02-B046",
+     "hook_block": "E044-S02-B003", "cliffhanger_block": "E044-S02-B046",
+     "why": "Groom dragged down begging, the bride abandons him to plead her love to the returned Duke, he pulls away from her touch and coldly dismisses her, then walks to the woman in chains; ends on her incredulous 'Her?!'."},
+    {"start_block": "E044-S02-B027", "end_block": "E044-S02-B046",
+     "hook_block": "E044-S02-B027", "cliffhanger_block": "E044-S02-B046",
+     "why": "Short rejection cut: 'I was supposed to be your Duchess!' / 'You were never my Duchess', 'Did you?', and he turns to the chained woman, ending on the rival's 'Her?!'."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger does not know Catherine was Alexander's fiancee before his presumed death or who the chained woman is to him, so 'Her?!' reads as a vague twist rather than the wife reveal.",
+  "notes": "Scene 1 (Sterling's arrest) is a 14 s tail of the previous cliffhanger and weak on its own."
+}

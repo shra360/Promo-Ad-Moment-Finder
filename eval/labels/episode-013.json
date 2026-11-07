@@ -1,0 +1,18 @@
+{
+  "episode": 13,
+  "best_hook": {"block": "E013-S02-B011", "why": "Thorns ripping bloody gashes across a woman's bare hands is a visceral, instantly arresting image."},
+  "alt_hooks": ["E013-S02-B021", "E013-S01-B023"],
+  "best_cliffhanger": {"block": "E013-S02-B041", "why": "Bleeding and torn, she begs 'Please, ring... you have to be here' while it is still unknown whether she will find it."},
+  "alt_cliffhangers": ["E013-S02-B042", "E013-S02-B035"],
+  "must_promos": [
+    {"start_block": "E013-S02-B010", "end_block": "E013-S02-B041",
+     "hook_block": "E013-S02-B011", "cliffhanger_block": "E013-S02-B041",
+     "why": "Opens on bloody hands in the thorns, the villains jeer that her husband's freedom is in the garden, the chained husband screams, and it cuts on her desperate plea before the ring is found."},
+    {"start_block": "E013-S02-B018", "end_block": "E013-S02-B042",
+     "hook_block": "E013-S02-B019", "cliffhanger_block": "E013-S02-B042",
+     "why": "Gerald's taunt states the stakes up front, then thorns stab her hand and Alexander breaks loose and is slammed back, ending as her bloody finger touches something buried."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "A stranger will not know why a ring frees her husband or why he is in handcuffs; that has to come from the villains' taunts.",
+  "notes": "This is the physical payoff of Ep 12's ultimatum: sustained public torment with gloating villains."
+}

@@ -1,0 +1,18 @@
+{
+  "episode": 46,
+  "best_hook": {"block": "E046-S01-B008", "why": "A priest backed by armed royal guards bursts into a wedding and seizes the chapel by royal command, which stops a scroll instantly."},
+  "alt_hooks": ["E046-S01-B024", "E046-S01-B045"],
+  "best_cliffhanger": {"block": "E046-S01-B064", "why": "A deadline and a threat land together (ten days, or the county watches him lose her twice), and the cut comes before Alexander answers."},
+  "alt_cliffhangers": ["E046-S01-B075", "E046-S01-B055"],
+  "must_promos": [
+    {"start_block": "E046-S01-B008", "end_block": "E046-S01-B038",
+     "hook_block": "E046-S01-B008", "cliffhanger_block": "E046-S01-B038",
+     "why": "Guards storm the wedding, the priest publicly voids the beggar-turned-Duke's marriage, Juliana fights back, and the priest crushes her with 'Love doesn't make a Duchess, girl. Paper does.' The marriage is left in doubt."},
+    {"start_block": "E046-S01-B045", "end_block": "E046-S01-B064",
+     "hook_block": "E046-S01-B045", "cliffhanger_block": "E046-S01-B064",
+     "why": "Opens on Juliana screaming that the church calls her marriage a lie, escalates through the priest's threat to undo it in one hearing, and cuts on the ten-day ultimatum and the threat to lose her twice."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "The legal jargon (Crown license, hedge ceremony, peerage court, royal register) may lose a stranger. Catherine, a second woman in a bridal gown smirking on the sidelines, is never explained.",
+  "notes": "There is no slap, but it is a public confrontation with armed guards, a voided marriage and an explicit deadline threat."
+}

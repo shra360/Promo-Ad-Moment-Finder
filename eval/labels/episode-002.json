@@ -1,0 +1,18 @@
+{
+  "episode": 2,
+  "best_hook": {"block": "E002-S01-B002", "why": "Groom at the altar tells his bride 'I cannot marry you, Juliana' - the whole premise in one line, no context needed."},
+  "alt_hooks": ["E002-S01-B038", "E002-S01-B034"],
+  "best_cliffhanger": {"block": "E002-S01-B055", "why": "After being told to leave with dignity, a defiant smile breaks through her tears: 'Dignity?' - the comeback is coming but not yet delivered."},
+  "alt_cliffhangers": ["E002-S01-B062", "E002-S01-B030"],
+  "must_promos": [
+    {"start_block": "E002-S01-B034", "end_block": "E002-S01-B055",
+     "hook_block": "E002-S01-B034", "cliffhanger_block": "E002-S01-B055",
+     "why": "Sister mocks the jilted bride ('kitchen maid who wandered into the wrong wedding'), stepmother and groom pile on, and it cuts the instant Juliana turns defiant."},
+    {"start_block": "E002-S01-B002", "end_block": "E002-S01-B030",
+     "hook_block": "E002-S01-B002", "cliffhanger_block": "E002-S01-B030",
+     "why": "Groom rejects her as too plain for a 'better choice', she begs her father, and he coldly sides with the groom - ends on total family abandonment."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "The older woman is only an off-screen voice and the father is labeled a blond nobleman, so a stranger may not grasp who is family; her closing speech is a payoff that needs the jilting already understood.",
+  "notes": "Second half of the episode resolves into a triumphant speech, so the best cut ends before it."
+}

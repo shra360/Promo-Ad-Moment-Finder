@@ -1,0 +1,15 @@
+{
+  "episode": 8,
+  "best_hook": {"block": "E008-S01-B029", "why": "He catches her wrist mid-reach and says a firm 'Not yet.' when she offers to trim his beard; the only abrupt, intriguing beat in the episode."},
+  "alt_hooks": ["E008-S01-B051"],
+  "best_cliffhanger": {"block": "E008-S01-B053", "why": "Asked if his scars came from the war, he answers 'Some were.', implying a hidden past and leaving the rest unexplained."},
+  "alt_cliffhangers": ["E008-S01-B037"],
+  "must_promos": [
+    {"start_block": "E008-S01-B029", "end_block": "E008-S01-B053",
+     "hook_block": "E008-S01-B029", "cliffhanger_block": "E008-S01-B053",
+     "why": "Least bad cut: the wrist grab and 'Let them grow' / 'It has advantages' suggest he is hiding his face on purpose, and it ends on the cryptic 'Some were.' about his scars."}
+  ],
+  "promo_strength": 1,
+  "standalone_risk": "Without knowing he is a duke in hiding, a stranger sees only gentle flirting over a herb book; the beard refusal and 'Some were.' only read as mysterious if you already know the premise.",
+  "notes": "Quiet bonding and exposition (herb lore, the mother's book). No antagonist, no threat. The subtext about him concealing his identity is the only promotional angle."
+}

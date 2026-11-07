@@ -1,0 +1,18 @@
+{
+  "episode": 34,
+  "best_hook": {"block": "E034-S01-B002", "why": "'Lady Juliana Ashcroft, you are accused of witchcraft, unlawful healing, and poisoning' - a self-explaining, high-stakes opener."},
+  "alt_hooks": ["E034-S01-B048", "E034-S01-B100"],
+  "best_cliffhanger": {"block": "E034-S01-B116", "why": "The judge rises and raises his hand to pronounce sentence on the defiant heroine - cut before the verdict."},
+  "alt_cliffhangers": ["E034-S01-B114", "E034-S01-B032"],
+  "must_promos": [
+    {"start_block": "E034-S01-B091", "end_block": "E034-S01-B116",
+     "hook_block": "E034-S01-B091", "cliffhanger_block": "E034-S01-B116",
+     "why": "'Renounce these practices to save yourself' - 'No' - 'refusal may be proof of witchcraft' - 'Then let it be', gavel, and the sentence left hanging."},
+    {"start_block": "E034-S01-B002", "end_block": "E034-S01-B033",
+     "hook_block": "E034-S01-B002", "cliffhanger_block": "E034-S01-B032",
+     "why": "Witchcraft charge read out, heroine admits to healing, then her own maid, begged to 'tell the truth', sobs 'Yes' against her - betrayal lands, we hold on Juliana's hurt."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger can't see that the maid was coerced or why the lord is prosecuting; that a witchcraft verdict means death is implied, not stated.",
+  "notes": "Courtroom Q&A is repetitive in the middle (townsman, old woman); the opening charge and the final refusal-to-sentence run are the ad beats."
+}

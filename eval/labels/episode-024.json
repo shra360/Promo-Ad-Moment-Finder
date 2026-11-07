@@ -1,0 +1,18 @@
+{
+  "episode": 24,
+  "best_hook": {"block": "E024-S01-B021", "why": "A noblewoman sneers 'Then let her suffer.' about a dying woman, and the riding-crop strike follows seconds later."},
+  "alt_hooks": ["E024-S01-B024", "E024-S02-B016"],
+  "best_cliffhanger": {"block": "E024-S02-B018", "why": "The crop is thrust into the friend's face - 'Do you want the same punishment?' - a fresh threat left hanging."},
+  "alt_cliffhangers": ["E024-S02-B033", "E024-S01-B036"],
+  "must_promos": [
+    {"start_block": "E024-S01-B021", "end_block": "E024-S02-B018",
+     "hook_block": "E024-S01-B021", "cliffhanger_block": "E024-S02-B018",
+     "why": "Cruel line, heroine refuses, crop strike, 'not a lady, not a woman whose opinion matters', forced to her knees to scrub the hearth, then the villain turns the crop on Prudence - cut on the threat."},
+    {"start_block": "E024-S02-B010", "end_block": "E024-S02-B033",
+     "hook_block": "E024-S02-B010", "cliffhanger_block": "E024-S02-B033",
+     "why": "Venomous 'when your hands are black enough you will remember what you are', crop threat on the friend, gloating, then the hidden antidote and the vow 'I will return. You cannot stop the healer.'"}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "The noblewoman is unnamed on screen, and a stranger may not know Juliana is secretly a lady and a healer or that the Duchess is being poisoned, so the hidden-vial payoff is weaker cold.",
+  "notes": "Classic humiliation episode: physical strike, class put-down, kneeling punishment and a defiant vow."
+}

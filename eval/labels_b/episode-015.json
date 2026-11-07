@@ -1,0 +1,18 @@
+{
+  "episode": 15,
+  "best_hook": {"block": "E015-S01-B034", "why": "A thug violently shoves the bandaged heroine onto the wet stone path; sudden violence against a defenceless woman stops the scroll."},
+  "alt_hooks": ["E015-S01-B004", "E015-S01-B031"],
+  "best_cliffhanger": {"block": "E015-S01-B053", "why": "Alexander stands between Juliana and three armed thugs and the leader taunts 'You want to fight us, veteran?'; the fight has not started yet."},
+  "alt_cliffhangers": ["E015-S01-B043", "E015-S01-B055"],
+  "must_promos": [
+    {"start_block": "E015-S01-B031", "end_block": "E015-S01-B053",
+     "hook_block": "E015-S01-B031", "cliffhanger_block": "E015-S01-B053",
+     "why": "Snarled 'Get out of the way!', her defiant 'No.', then the shove within 3 s; blood seeps through her bandages, thugs laugh, a club is raised, her husband charges out of the mist and the clip cuts on the standoff."},
+    {"start_block": "E015-S01-B003", "end_block": "E015-S01-B042",
+     "hook_block": "E015-S01-B004", "cliffhanger_block": "E015-S01-B043",
+     "why": "Opens on a club smashing a planter at night, follows the full garden desecration and the shove, and cuts with the club raised over her mother's last herbs and Juliana screaming 'Stop!', before any rescue."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "Nothing in the clip says who sent the thugs or why, why her hands are bandaged, or that Alexander is her husband; 'veteran' is the only hint about him.",
+  "notes": "Promo 2 runs close to the 60 s cap; if trimmed, the first cut would be the 'clearing this rubbish' exchange."
+}

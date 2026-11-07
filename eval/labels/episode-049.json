@@ -1,0 +1,18 @@
+{
+  "episode": 49,
+  "best_hook": {"block": "E049-S01-B018", "why": "'A priest and a disgraced bride meeting before dawn in her bedchamber': a scandal stated outright in the opening seconds."},
+  "alt_hooks": ["E049-S01-B050", "E049-S01-B029"],
+  "best_cliffhanger": {"block": "E049-S01-B062", "why": "'We always have.' reveals a long secret bond as the treasonous pact is sealed with an intimate touch, so the threat to the heroes is now active."},
+  "alt_cliffhangers": ["E049-S01-B054", "E049-S01-B033"],
+  "must_promos": [
+    {"start_block": "E049-S01-B018", "end_block": "E049-S01-B033",
+     "hook_block": "E049-S01-B018", "cliffhanger_block": "E049-S01-B033",
+     "why": "A forbidden priest-and-bride meeting, a hint that he publicly humiliated someone at her bidding, a reveal that she has always used him, then a cut on his blunt question of what she really wants."},
+    {"start_block": "E049-S01-B050", "end_block": "E049-S01-B063",
+     "hook_block": "E049-S01-B050", "cliffhanger_block": "E049-S01-B062",
+     "why": "Opens on 'careful men still hang' for treason, then seduction and the Duchess promise, and the pact sealed with a hand and a cheek caress. It ends on an intimate reveal while the conspiracy is unresolved."}
+  ],
+  "promo_strength": 2,
+  "standalone_risk": "The stakes are abstract to a stranger: which hearing and council, who 'her' is, and that this priest is the one who voided the heroine's marriage.",
+  "notes": "This is a dialogue-heavy two-hander in a dark room. The value is the forbidden priest affair and the treason talk, but nothing physical happens until the last seconds."
+}

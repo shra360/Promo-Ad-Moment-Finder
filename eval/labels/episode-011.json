@@ -1,0 +1,18 @@
+{
+  "episode": 11,
+  "best_hook": {"block": "E011-S01-B016", "why": "A rich man snarling a theft accusation at the heroine's husband sets conflict and stakes in one line."},
+  "alt_hooks": ["E011-S02-B016", "E011-S02-B022"],
+  "best_cliffhanger": {"block": "E011-S02-B037", "why": "The planted watch has just been pulled from the husband's coat and the villain gloats; arrest and the couple's fate hang unresolved."},
+  "alt_cliffhangers": ["E011-S02-B032", "E011-S02-B034"],
+  "must_promos": [
+    {"start_block": "E011-S02-B015", "end_block": "E011-S02-B037",
+     "hook_block": "E011-S02-B016", "cliffhanger_block": "E011-S02-B037",
+     "why": "Opens on Juliana accusing her ex of a frame-up, builds through his baiting and Alexander's restraint, and cuts the instant the watch turns up in the coat with Gerald laughing."},
+    {"start_block": "E011-S01-B015", "end_block": "E011-S01-B045",
+     "hook_block": "E011-S01-B016", "cliffhanger_block": "E011-S01-B045",
+     "why": "The theft accusation, the 'you married a beggar' insult and the constable's demand all land fast, ending on Alexander's grim 'Search it.' before anyone knows what will be found."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger may not know Gerald is Juliana's former suitor or realise the watch was planted (it is implied, never shown), so the find could read as Alexander actually being a thief.",
+  "notes": "The strongest material (accusation and watch reveal) sits about 77 s apart, too far for one continuous 60 s cut; a two-segment promo joining S01-B016 with the S02 watch reveal would be ideal."
+}

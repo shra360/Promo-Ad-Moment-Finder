@@ -1,0 +1,15 @@
+{
+  "episode": 38,
+  "best_hook": {"block": "E038-S01-B028", "why": "Chained, tear-streaked woman in a dungeon: 'Do you know they condemned me?' - stakes in one line"},
+  "alt_hooks": ["E038-S01-B013", "E038-S01-B030"],
+  "best_cliffhanger": {"block": "E038-S01-B052", "why": "Wedding bells toll and she realises 'Then I suppose I'm next' - execution imminent, rescue unknown"},
+  "alt_cliffhangers": ["E038-S01-B031", "E038-S01-B057"],
+  "must_promos": [
+    {"start_block": "E038-S01-B028", "end_block": "E038-S01-B052",
+     "hook_block": "E038-S01-B028", "cliffhanger_block": "E038-S01-B052",
+     "why": "Condemned wife fears dying without seeing her husband, vows not to betray him, then the bells start and she grips the bars: 'I suppose I'm next'"}
+  ],
+  "promo_strength": 2,
+  "standalone_risk": "No antagonist on screen: a stranger does not know who condemned her, why, or who Alexander is, and the bells-mean-wedding-means-execution link is cryptic without prior episodes",
+  "notes": "Quiet single-character episode; the guard's bread is tender but not a scroll-stopper."
+}

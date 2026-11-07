@@ -1,0 +1,18 @@
+{
+  "episode": 15,
+  "best_hook": {"block": "E015-S01-B034", "why": "A thug violently shoves a bandaged woman to the wet stone after she defiantly says 'No.'"},
+  "alt_hooks": ["E015-S01-B004", "E015-S01-B017"],
+  "best_cliffhanger": {"block": "E015-S01-B053", "why": "The thug challenges the arriving husband, 'You want to fight us, veteran?', and the fight is about to break out."},
+  "alt_cliffhangers": ["E015-S01-B042", "E015-S01-B055"],
+  "must_promos": [
+    {"start_block": "E015-S01-B032", "end_block": "E015-S01-B053",
+     "hook_block": "E015-S01-B034", "cliffhanger_block": "E015-S01-B053",
+     "why": "She refuses, gets shoved down, her bandages bleed, the thugs mock her and raise a club, then her husband storms in and the cut lands on the fight challenge."},
+    {"start_block": "E015-S01-B003", "end_block": "E015-S01-B042",
+     "hook_block": "E015-S01-B004", "cliffhanger_block": "E015-S01-B042",
+     "why": "Opens on a club smashing her garden, builds through trampled herbs, mockery and the shove, and ends with the club raised over her before rescue."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "Who sent the thugs and why is never said, and her bandaged hands come from the previous episode; the fight itself does not happen.",
+  "notes": "This is a classic bully-the-heroine, hero-arrives setup."
+}

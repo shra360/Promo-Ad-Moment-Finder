@@ -1,0 +1,18 @@
+{
+  "episode": 9,
+  "best_hook": {"block": "E009-S01-B009", "why": "A soaked, weeping mother bursts in with a swaddled child: 'Please! ... My boy is burning with fever!' gives instant life-or-death urgency."},
+  "alt_hooks": ["E009-S01-B003", "E009-S02-B010"],
+  "best_cliffhanger": {"block": "E009-S02-B023", "why": "The arrogant nobleman, alone by the fire after hearing a scarred veteran resembles the late Duke, whispers 'Impossible.': a reveal landing with the danger still to come."},
+  "alt_cliffhangers": ["E009-S01-B042", "E009-S02-B014"],
+  "must_promos": [
+    {"start_block": "E009-S01-B009", "end_block": "E009-S01-B042",
+     "hook_block": "E009-S01-B009", "cliffhanger_block": "E009-S01-B042",
+     "why": "Hidden-talent heroine under pressure: the frantic plea, Juliana racing through her mother's remedies, 'Please save him', and a cut on the mother's panicked 'Why isn't it working?' before the fever breaks."},
+    {"start_block": "E009-S01-B059", "end_block": "E009-S02-B023",
+     "hook_block": "E009-S01-B059", "cliffhanger_block": "E009-S02-B023",
+     "why": "The husband's warning that village gossip is dangerous cuts straight to a nobleman learning a scarred veteran may be the late Duke; ends on his shaken 'Impossible.', which sells the series title."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger is not told that the scarred husband is the 'war veteran' in the rumor, or who the Blond Nobleman is to the late Duke and why he is afraid; promo 2 relies on the viewer connecting the two scenes.",
+  "notes": "Two usable promos: an urgent healing scene (no villain, but real stakes) and the first on-screen sign that the villain fears the Duke is alive. The study scene is the stronger story hook but opens weakly on its own, so it needs the cottage warning as a lead-in."
+}

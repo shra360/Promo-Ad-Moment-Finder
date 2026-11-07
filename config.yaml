@@ -1,0 +1,31 @@
+# Promo Finder settings. Environment variables override the llm block:
+#   LLM_PROVIDER, LLM_MODEL, LLM_JUDGE_MODEL, LLM_BASE_URL, LLM_API_KEY
+llm:
+  provider: gemini            # gemini | anthropic | openai_compat | mock
+  model: gemini-3.8-flash     # free tier on a Google AI Studio key
+  judge_model: null           # null = same as model; a different model family reduces self-preference
+  base_url: null              # only for openai_compat (Groq, OpenRouter, Ollama, a Kuku endpoint)
+  temperature: 0.2
+  max_output_tokens: 16000   # room for models that reason before answering
+  max_workers: 4              # parallel calls; lower it if the free tier rate-limits
+  max_retries: 6
+  # Optional USD per million tokens, for the cost line in the run manifest
+  price_in: null
+  price_out: null
+
+pipeline:
+  promos_per_episode: 5       # proposals the model makes per episode
+  montage_promos: 8           # cross-episode proposals (0 turns the montage pass off)
+  judge_samples: 2            # independent judge runs per promo, averaged; the gap is reported
+  min_total: 20.0
+  max_total: 60.0
+  min_segment: 3.0
+  hook_window: 1.0            # hook block must start within this many seconds of the clip start
+
+ranking:
+  weights: {hook: 0.25, cliffhanger: 0.25, standalone: 0.20, coherence: 0.10, intensity: 0.10, curiosity: 0.10}
+  gates: {hook: 3, cliffhanger: 3, standalone: 3}
+  final_count: 25             # promos kept in the ranked list
+  slate_size: 5               # "post these first"
+  max_per_episode: 2          # in the ranked list
+  dedupe_similarity: 0.6      # beat-label word overlap that counts as the same story event

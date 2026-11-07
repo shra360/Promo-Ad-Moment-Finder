@@ -1,0 +1,18 @@
+{
+  "episode": 45,
+  "best_hook": {"block": "E045-S02-B005", "why": "The Duke publicly accuses the bride of poisoning his mother and torturing his wife: shocking, specific villain charge in one line."},
+  "alt_hooks": ["E045-S02-B018", "E045-S03-B004"],
+  "best_cliffhanger": {"block": "E045-S03-B018", "why": "Right after the marriage is declared invalid, the rival bride's despair turns to a venomous smirk: the heroine's claim is torn up and the villain is back in play."},
+  "alt_cliffhangers": ["E045-S03-B014", "E045-S03-B004"],
+  "must_promos": [
+    {"start_block": "E045-S02-B017", "end_block": "E045-S03-B018",
+     "hook_block": "E045-S02-B018", "cliffhanger_block": "E045-S03-B018",
+     "why": "Triumphant proclamation of Juliana as wife and Duchess, the doors slam open, a bishop with a Crown officer declares the marriage legally void in front of everyone, Juliana panics and Catherine smirks; reversal ends unresolved."},
+    {"start_block": "E045-S02-B005", "end_block": "E045-S03-B004",
+     "hook_block": "E045-S02-B005", "cliffhanger_block": "E045-S03-B004",
+     "why": "Accusation of poisoning and torture, the bride's stunned 'Wife?!', the public proclamation and the usurper's shock, then the doors burst open on 'No one will bow yet!' with the interruption unexplained."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "Why Juliana was in chains and the earlier secret marriage are unexplained, and the bishop's objection is legal jargon (Crown licence, Royal Matrimonial Register) a cold viewer may not parse.",
+  "notes": "Scene 1 (chains removed, 'You're the Duke?') is the title-fantasy payoff but is soft romantic dialogue with no hook or cliffhanger; scene 2-3 carry the ad."
+}

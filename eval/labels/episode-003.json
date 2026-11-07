@@ -1,0 +1,18 @@
+{
+  "episode": 3,
+  "best_hook": {"block": "E003-S02-B030", "why": "'Guards! Remove her!' and a bride in white is seized and dragged from the church - violent, instant stop-scroll."},
+  "alt_hooks": ["E003-S03-B017", "E003-S03-B005"],
+  "best_cliffhanger": {"block": "E003-S03-B062", "why": "Scarred stranger on one knee before the stunned congregation: 'Lady Juliana... accept my hand' - her answer is left hanging."},
+  "alt_cliffhangers": ["E003-S03-B020", "E003-S03-B058"],
+  "must_promos": [
+    {"start_block": "E003-S02-B030", "end_block": "E003-S03-B020",
+     "hook_block": "E003-S02-B030", "cliffhanger_block": "E003-S03-B020",
+     "why": "Bride dragged out by guards, a mysterious stranger orders them off, flattens a guard with one punch, and it cuts on the groom yelling 'He's only one man!' - fight about to escalate."},
+    {"start_block": "E003-S03-B017", "end_block": "E003-S03-B062",
+     "hook_block": "E003-S03-B017", "cliffhanger_block": "E003-S03-B062",
+     "why": "Opens on the knockout punch, the stranger protects her and offers back the marriage they stole, and ends on his kneeling proposal before she answers."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "Neither cut shows why the family is throwing her out (the groom chose her sister); the stranger's identity and motive are unexplained, which works as mystery but could read as random.",
+  "notes": ""
+}

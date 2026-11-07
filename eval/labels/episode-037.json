@@ -1,0 +1,18 @@
+{
+  "episode": 37,
+  "best_hook": {"block": "E037-S02-B020", "why": "'A public execution after a wedding.' - a grotesque premise in one line, delivered with a chuckle"},
+  "alt_hooks": ["E037-S01-B012", "E037-S03-B006"],
+  "best_cliffhanger": {"block": "E037-S04-B013", "why": "Clarissa's 'Let them see what happens when a woman forgets her place' - the public execution is set and celebrated, nothing stops it yet"},
+  "alt_cliffhangers": ["E037-S02-B028", "E037-S04-B016"],
+  "must_promos": [
+    {"start_block": "E037-S02-B020", "end_block": "E037-S03-B015",
+     "hook_block": "E037-S02-B020", "cliffhanger_block": "E037-S03-B015",
+     "why": "Aristocrats gleefully frame the execution as a warning to women who rise, then cut to the starving, chained Juliana dragging herself up to defy them - villain vs victim with the execution still looming"},
+    {"start_block": "E037-S03-B005", "end_block": "E037-S04-B013",
+     "hook_block": "E037-S03-B006", "cliffhanger_block": "E037-S04-B013",
+     "why": "Opens on a tear-stained shackled woman refusing to surrender, then the gloating noblewoman confirms she will be executed and ends on the chilling 'forgets her place' toast"}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "A stranger never learns what Juliana is accused of or how Clarissa and her husband relate to her; the villains are side characters toasting someone off screen",
+  "notes": "Mostly gloating dialogue; the dungeon scene supplies the only strong visual."
+}

@@ -1,0 +1,18 @@
+{
+  "episode": 33,
+  "best_hook": {"block": "E033-S01-B075", "why": "A cold lord pronounces 'That is witchcraft' over a weeping maid - short, lethal, sets the stakes at once."},
+  "alt_hooks": ["E033-S01-B040", "E033-S01-B085"],
+  "best_cliffhanger": {"block": "E033-S01-B092", "why": "'And now... you will save your brother' - the maid must choose between her brother and the woman who saved him; decision not yet taken."},
+  "alt_cliffhangers": ["E033-S01-B097", "E033-S01-B066"],
+  "must_promos": [
+    {"start_block": "E033-S01-B075", "end_block": "E033-S01-B092",
+     "hook_block": "E033-S01-B075", "cliffhanger_block": "E033-S01-B092",
+     "why": "Witchcraft accusation, the maid's protest that Juliana saved Toby, 'that will be your testimony... before the magistrate', and the brutal brother-for-her trade left hanging."},
+    {"start_block": "E033-S01-B040", "end_block": "E033-S01-B066",
+     "hook_block": "E033-S01-B040", "cliffhanger_block": "E033-S01-B066",
+     "why": "Opens on the threat to throw a seven-year-old in gaol, then shows the lord twisting her words step by step, ending on 'Praying... or chanting?' as the trap closes."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "Juliana never appears, so a stranger doesn't know who Lady Juliana is or who this lord is; promo 1 drops the explicit gaol threat that drives the maid's choice.",
+  "notes": "Pure interrogation between secondary characters, no physical action; strong emotion but static."
+}

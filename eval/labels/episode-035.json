@@ -1,0 +1,18 @@
+{
+  "episode": 35,
+  "best_hook": {"block": "E035-S03-B013", "why": "A sobbing mother touches her scarred son's face and says 'I buried you' - instant presumed-dead reveal."},
+  "alt_hooks": ["E035-S03-B045", "E035-S01-B003"],
+  "best_cliffhanger": {"block": "E035-S03-B056", "why": "'The men behind it... are the same men ruling Ashwood now' - conspiracy reveal lands, who they are and what he'll do hang open."},
+  "alt_cliffhangers": ["E035-S03-B020", "E035-S03-B053"],
+  "must_promos": [
+    {"start_block": "E035-S03-B045", "end_block": "E035-S03-B058",
+     "hook_block": "E035-S03-B045", "cliffhanger_block": "E035-S03-B056",
+     "why": "'Someone wanted you to believe I was dead' - ambush was no accident, his men ordered to die - ends on the rulers-of-Ashwood reveal and the mother's horrified gasp."},
+    {"start_block": "E035-S03-B013", "end_block": "E035-S03-B020",
+     "hook_block": "E035-S03-B013", "cliffhanger_block": "E035-S03-B020",
+     "why": "Presumed-dead son reunion: 'I buried you', 'your whole regiment was destroyed', 'how did you survive?' - 'I wasn't supposed to.'"}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "'Ashwood' and who rules it are unnamed, the link to Juliana's trial is absent, and Alexander's identity (the hidden duke) isn't explained.",
+  "notes": "No violence; reunion plus spoken exposition about a past ambush. The escape/blizzard opening is atmosphere, not a hook."
+}

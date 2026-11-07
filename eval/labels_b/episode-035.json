@@ -1,0 +1,18 @@
+{
+  "episode": 35,
+  "best_hook": {"block": "E035-S03-B013", "why": "A sobbing mother cups her scarred son's face and says 'I buried you.': the presumed-dead son reveal in three words."},
+  "alt_hooks": ["E035-S03-B045", "E035-S01-B003"],
+  "best_cliffhanger": {"block": "E035-S03-B056", "why": "'The men behind it... are the same men ruling Ashwood now.': a conspiracy reveal that lands on the mother's frozen dread, with nothing resolved."},
+  "alt_cliffhangers": ["E035-S03-B053", "E035-S03-B020"],
+  "must_promos": [
+    {"start_block": "E035-S03-B032", "end_block": "E035-S03-B056",
+     "hook_block": "E035-S03-B033", "cliffhanger_block": "E035-S03-B056",
+     "why": "Fist crushing the map on 'My men were slaughtered', then shot and left for dead, 'someone wanted you to believe I was dead', 'someone ordered my men to die', building to the reveal that the conspirators now rule Ashwood."},
+    {"start_block": "E035-S03-B013", "end_block": "E035-S03-B020",
+     "hook_block": "E035-S03-B013", "cliffhanger_block": "E035-S03-B020",
+     "why": "'I buried you.' / 'They told me your entire regiment was destroyed.' / 'Then how did you survive?' / 'I wasn't supposed to.': a short reunion cut ending on an ominous answer."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "In the conspiracy cut a stranger is not told the woman is his mother, and 'the men ruling Ashwood' are never named, so the final reveal lands only as vague menace; the Crown mission and Iberian front exposition is heavy.",
+  "notes": "The escape tunnel and blizzard trek (00:00-00:27) look good but have no hook-strength moment; the episode is a static two-hander once inside the cabin."
+}

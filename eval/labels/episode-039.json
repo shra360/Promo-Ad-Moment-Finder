@@ -1,0 +1,18 @@
+{
+  "episode": 39,
+  "best_hook": {"block": "E039-S03-B007", "why": "Meek firewood driver suddenly leaps off the cart and slams the royal sentry into the wagon wheel - violent surprise action"},
+  "alt_hooks": ["E039-S04-B011", "E039-S03-B010"],
+  "best_cliffhanger": {"block": "E039-S05-B015", "why": "Duke in full regalia marching through the snow: 'And I am bringing my wife home' - the rescue is launched but not yet reached"},
+  "alt_cliffhangers": ["E039-S05-B012", "E039-S03-B015"],
+  "must_promos": [
+    {"start_block": "E039-S03-B006", "end_block": "E039-S05-B012",
+     "hook_block": "E039-S03-B007", "cliffhanger_block": "E039-S05-B012",
+     "why": "Guards taken down outside the cathedral, 'Tell the Duke', then the scarred exile shears off his disguise, dons ducal regalia, is knelt to as 'Your Grace' and vows to take back his house"},
+    {"start_block": "E039-S04-B011", "end_block": "E039-S05-B016",
+     "hook_block": "E039-S04-B011", "cliffhanger_block": "E039-S05-B015",
+     "why": "'They buried Alexander Ashwin three years ago. Today, he comes home.' - the title's broken-soldier-to-Duke transformation, ending on the march to rescue his wife"}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "The wife's danger is never stated in this episode and no villain appears, so a stranger sees a rescue without knowing who he is rescuing her from or why he was presumed dead",
+  "notes": "Transformation reveal is on-brand for the show title; the confrontation itself is not in this episode."
+}

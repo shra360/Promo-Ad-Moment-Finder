@@ -1,0 +1,18 @@
+{
+  "episode": 50,
+  "best_hook": {"block": "E050-S01-B007", "why": "A priest lying bare-chested in a woman's bed says 'A man in my collar isn't supposed to be in this bed at all': the forbidden affair is clear at once."},
+  "alt_hooks": ["E050-S01-B004", "E050-S01-B017"],
+  "best_cliffhanger": {"block": "E050-S02-B006", "why": "The maid sees the affair through the doorway and freezes in shock, and the clip cuts before anyone knows they've been seen or what she will do."},
+  "alt_cliffhangers": ["E050-S01-B017", "E050-S01-B011"],
+  "must_promos": [
+    {"start_block": "E050-S01-B017", "end_block": "E050-S02-B008",
+     "hook_block": "E050-S01-B017", "cliffhanger_block": "E050-S02-B006",
+     "why": "Opens on the corrupt priest's line 'Absolution is free. Discretion has a price.', runs through the bribe deal and the passionate embrace, and ends on the maid stumbling onto them and gasping."},
+    {"start_block": "E050-S01-B007", "end_block": "E050-S01-B017",
+     "hook_block": "E050-S01-B007", "cliffhanger_block": "E050-S01-B017",
+     "why": "A scandalous in-bed opening, 'Name your price', the outrageous tax-territory demand, and a cut on the blackmail line before Catherine agrees."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger won't know that Agnes is Catherine's own maid and accomplice, so it is unclear why her discovery is dangerous. The hearing and the 'west territory' deal also lack context.",
+  "notes": "The discovery is only about 8 seconds at the very end, so the strongest cut has to run about 49 s from the mid-episode hook to reach it."
+}

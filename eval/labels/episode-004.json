@@ -1,0 +1,18 @@
+{
+  "episode": 4,
+  "best_hook": {"block": "E004-S01-B007", "why": "Ex-groom sneers 'A penniless nobody for a discarded bride' over a kneeling stranger with a ring - premise and contempt in one line."},
+  "alt_hooks": ["E004-S01-B012", "E004-S01-B087"],
+  "best_cliffhanger": {"block": "E004-S01-B099", "why": "Moments after the wedding, the stepmother shrieks 'You are disowned!' - she is cast out with a stranger and nowhere to go."},
+  "alt_cliffhangers": ["E004-S01-B042", "E004-S01-B046"],
+  "must_promos": [
+    {"start_block": "E004-S01-B087", "end_block": "E004-S01-B101",
+     "hook_block": "E004-S01-B087", "cliffhanger_block": "E004-S01-B099",
+     "why": "Ex-groom erupts 'You have thrown yourself away! For a penniless nobody!', she cuts him down, and her family disowns her on the spot - ends on her holding back tears."},
+    {"start_block": "E004-S01-B007", "end_block": "E004-S01-B042",
+     "hook_block": "E004-S01-B007", "cliffhanger_block": "E004-S01-B042",
+     "why": "Ex and sister mock the 'penniless nobody' proposing to the discarded bride, he says he sees a betrayed woman, and it cuts on her 'If this is pity, take back your ring' - decision unmade."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "The episode mainly resolves the proposal (she accepts, they wed), so the tension is lower; a stranger won't know why she is a 'discarded bride' or that Lady Ashcroft is her stepmother, and the husband's identity stays unexplained.",
+  "notes": "Middle stretch (acceptance, vows, ring) is warm and low-conflict; usable material sits at the opening mockery and the post-vow disowning."
+}

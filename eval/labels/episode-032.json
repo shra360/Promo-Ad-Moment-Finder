@@ -1,0 +1,18 @@
+{
+  "episode": 32,
+  "best_hook": {"block": "E032-S01-B091", "why": "Catherine snaps, raising the red-hot poker like a weapon and screaming 'Silence! Silence!' at a chained woman."},
+  "alt_hooks": ["E032-S01-B013", "E032-S01-B103"],
+  "best_cliffhanger": {"block": "E032-S01-B116", "why": "The glowing iron thrusts at Juliana's face and stops millimeters from her eye - cut before we learn if it touches."},
+  "alt_cliffhangers": ["E032-S01-B114", "E032-S01-B042"],
+  "must_promos": [
+    {"start_block": "E032-S01-B091", "end_block": "E032-S01-B117",
+     "hook_block": "E032-S01-B091", "cliffhanger_block": "E032-S01-B116",
+     "why": "Rage-scream open, Juliana's 'you have to threaten a chained woman to feel powerful' explains the stakes, then 'let's see how brave you are when it touches your skin' and the iron at her eye."},
+    {"start_block": "E032-S01-B013", "end_block": "E032-S01-B042",
+     "hook_block": "E032-S01-B013", "cliffhanger_block": "E032-S01-B042",
+     "why": "'Say goodbye to your mother' over a burning book, the heroine's stunning 'Burn it', and it ends with the glowing iron shoved in her face mid-scream."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "Who Catherine is and why Juliana is in a dungeon are never said; Gerald, Clarissa and 'your soldier' are opaque to a newcomer.",
+  "notes": "Largely a repeat of Ep 31's dungeon confrontation and cliffhanger; middle is long verbal back-and-forth."
+}

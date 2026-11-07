@@ -1,0 +1,15 @@
+{
+  "episode": 16,
+  "best_hook": {"block": "E016-S01-B014", "why": "Thug swings a club full force and the scarred soldier catches it bare-handed mid-air: instant scroll-stopping power move."},
+  "alt_hooks": ["E016-S01-B036", "E016-S01-B004"],
+  "best_cliffhanger": {"block": "E016-S01-B046", "why": "Right after the thug screams 'Gerald Harrington paid us!', Juliana's heartbroken 'Gerald...' turns the name into a betrayal by someone she trusted; cut before any fallout."},
+  "alt_cliffhangers": ["E016-S01-B044", "E016-S01-B057"],
+  "must_promos": [
+    {"start_block": "E016-S01-B014", "end_block": "E016-S01-B046",
+     "hook_block": "E016-S01-B014", "cliffhanger_block": "E016-S01-B046",
+     "why": "Bare-hand catch, three thugs flattened, choke-lift interrogation 'Who sent you?' / 'Wrong answer.', then the mastermind's name and the wife's devastated reaction - full arc of power fantasy plus betrayal reveal in 40 s."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "A stranger does not know who Gerald Harrington is or why he would pay to wreck a garden; Juliana's 'Gerald...' signals betrayal but not the relationship. Why thugs target her garden is also unexplained.",
+  "notes": "Opening the cut at the catch skips the 'Move aside, soldier' setup; Juliana's injured reaction shots during the fight supply who is being protected."
+}

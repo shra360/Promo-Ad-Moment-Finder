@@ -1,0 +1,18 @@
+{
+  "episode": 31,
+  "best_hook": {"block": "E031-S01-B071", "why": "Catherine screams 'Enough!' and drives a red-hot poker into the chained girl's book - violent, loud, instantly readable."},
+  "alt_hooks": ["E031-S01-B066", "E031-S01-B011"],
+  "best_cliffhanger": {"block": "E031-S01-B086", "why": "The glowing iron swings up and stops inches from Juliana's eyes - will she be branded? Cut before the answer."},
+  "alt_cliffhangers": ["E031-S01-B084"],
+  "must_promos": [
+    {"start_block": "E031-S01-B071", "end_block": "E031-S01-B087",
+     "hook_block": "E031-S01-B071", "cliffhanger_block": "E031-S01-B086",
+     "why": "Tight torture beat: scream, mother's book burned in front of the chained heroine, her anguish, then the iron at her eye - all visual, no backstory needed."},
+    {"start_block": "E031-S01-B066", "end_block": "E031-S01-B087",
+     "hook_block": "E031-S01-B066", "cliffhanger_block": "E031-S01-B086",
+     "why": "Longer cut that opens on Juliana's defiant jab so viewers see why Catherine snaps, then rides the same escalation to the iron at her face."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "A stranger won't know who Catherine is to Juliana or why Juliana is chained (the witch frame-up); the 'beggar/scarred nobody' husband is unexplained.",
+  "notes": "First minute is verbal sparring about a jilting at the altar; the ad material is the last 40 s."
+}

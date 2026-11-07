@@ -1,0 +1,18 @@
+{
+  "episode": 43,
+  "best_hook": {"block": "E043-S01-B057", "why": "Scarred Duke towers over the usurper and accuses him of selling his soldiers to the enemy: a betrayal accusation that grabs immediately."},
+  "alt_hooks": ["E043-S01-B005", "E043-S01-B074"],
+  "best_cliffhanger": {"block": "E043-S01-B086", "why": "The fleeing co-conspirator opens the side door and a constable is waiting: escape cut off, arrest not yet made."},
+  "alt_cliffhangers": ["E043-S01-B052", "E043-S01-B078"],
+  "must_promos": [
+    {"start_block": "E043-S01-B057", "end_block": "E043-S01-B087",
+     "hook_block": "E043-S01-B057", "cliffhanger_block": "E043-S01-B086",
+     "why": "Treason accusation, Crown records proving he was falsely declared dead and his title taken, Rupert screaming and then selling out Sterling, Sterling's sneak exit blocked by the constable; tight, escalating, ends on frozen terror."},
+    {"start_block": "E043-S01-B009", "end_block": "E043-S01-B053",
+     "hook_block": "E043-S01-B009", "cliffhanger_block": "E043-S01-B052",
+     "why": "Groom screams for an arrest, the guards salute the real Duke instead, a top-secret War Office dossier is read aloud and the traitors are named, cutting as Rupert's own name lands."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "Lord Sterling's role (Catherine's father, Rupert's partner) is never stated, and the military-intelligence exposition (Iberian front, death register) is dense for a cold viewer.",
+  "notes": "00:30-00:55 is document-reading exposition; avoid opening a promo there."
+}

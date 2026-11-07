@@ -1,0 +1,18 @@
+{
+  "episode": 17,
+  "best_hook": {"block": "E017-S01-B015", "why": "'For standing between me and those men' - tearful woman in a wrecked garden immediately signals violence just happened and a protector; the strongest opener in a quiet episode."},
+  "alt_hooks": ["E017-S01-B020"],
+  "best_cliffhanger": {"block": "E017-S02-B043", "why": "'I know almost nothing about the man I married' - right after he refuses 'Not yet', it plants the mystery of his true identity and leaves it hanging."},
+  "alt_cliffhangers": ["E017-S02-B037", "E017-S01-B025"],
+  "must_promos": [
+    {"start_block": "E017-S01-B015", "end_block": "E017-S01-B029",
+     "hook_block": "E017-S01-B015", "cliffhanger_block": "E017-S01-B027",
+     "why": "The vow beat: 'As long as I draw breath... no one will hurt you again' / 'You cannot promise that' / 'I just did' - a swoon-romance cut for female-skewing audiences; ending is more button than cliffhanger."},
+    {"start_block": "E017-S02-B022", "end_block": "E017-S02-B043",
+     "hook_block": "E017-S02-B022", "cliffhanger_block": "E017-S02-B043",
+     "why": "Fireside intimacy into his guarded 'Not yet' when she reaches for his beard, landing on the voice-over 'I know almost nothing about the man I married' - a soft mystery tease for the secret-duke premise."}
+  ],
+  "promo_strength": 2,
+  "standalone_risk": "No antagonist and no on-screen danger; a stranger does not see the attack being referenced, and the meaning of 'Not yet' (hiding his identity behind the hair and beard) is only implied.",
+  "notes": "Transitional romance episode. Neither promo has a real scroll-stopping hook; the first ends on a resolved line ('I just did')."
+}

@@ -1,0 +1,18 @@
+{
+  "episode": 10,
+  "best_hook": {"block": "E010-S01-B003", "why": "The door bangs open on a quiet room and the husband stands panting in the threshold clutching a blood-soaked chest; a startling, violent opening."},
+  "alt_hooks": ["E010-S01-B011", "E010-S01-B024"],
+  "best_cliffhanger": {"block": "E010-S01-B059", "why": "Faces inches apart, his hands pressing hers to his bare chest, he confesses 'Your touch is the only medicine that has ever eased my pain'; her response, and a kiss, are left pending."},
+  "alt_cliffhangers": ["E010-S01-B030", "E010-S01-B056"],
+  "must_promos": [
+    {"start_block": "E010-S01-B003", "end_block": "E010-S01-B030",
+     "hook_block": "E010-S01-B003", "cliffhanger_block": "E010-S01-B030",
+     "why": "Bloody entrance, his obvious lie ('A cut from the tenant fields'), her ordering him to strip, and the reveal of a torso crisscrossed with battle scars; cut on her horrified 'Dear God.' with the question of what really happened unanswered."},
+    {"start_block": "E010-S01-B048", "end_block": "E010-S01-B059",
+     "hook_block": "E010-S01-B048", "cliffhanger_block": "E010-S01-B059",
+     "why": "Pure romance tease: 'Why do you look at me like that?', shirtless wounded hero, faces drawing close, and a confession that leaves the near-kiss unresolved."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "A stranger never learns how he was really wounded or who they are to each other (a hasty marriage); without the duke premise his scars and the lie about the 'tenant fields' carry no mystery.",
+  "notes": "Strong opening hook and shirtless/near-kiss romance appeal, but no antagonist or threat on screen and the episode resolves into tenderness; usable rather than an obvious ad."
+}

@@ -1,0 +1,15 @@
+{
+  "episode": 20,
+  "best_hook": {"block": "E020-S02-B014", "why": "'Once my cousin Alexander's death is formally sealed by the Crown... the title is mine' - the usurper states his theft outright."},
+  "alt_hooks": ["E020-S02-B010", "E020-S04-B004"],
+  "best_cliffhanger": {"block": "E020-S02-B026", "why": "'Not through the winter. I've ensured her quiet comfort' - a chilling hint he is slowly killing the Dowager; the threat lands and nothing stops it."},
+  "alt_cliffhangers": ["E020-S04-B014", "E020-S03-B019"],
+  "must_promos": [
+    {"start_block": "E020-S02-B014", "end_block": "E020-S02-B026",
+     "hook_block": "E020-S02-B014", "cliffhanger_block": "E020-S02-B026",
+     "why": "Villain tea scene distilled: title grab, 'the old woman still breathes', 'how much longer can the frail thing survive?', ending on his implied poisoning - pure hate-the-villain bait with a deadly threat hanging."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "A stranger does not know Alexander is actually alive or that the Dowager is his mother, so the dramatic irony is lost; 'I've ensured her quiet comfort' as poisoning is implied rather than stated.",
+  "notes": "Mostly dialogue in a drawing room with no action; Juliana's barn defiance ('They have reduced me to myself. And I am not finished.') is a softer secondary option."
+}

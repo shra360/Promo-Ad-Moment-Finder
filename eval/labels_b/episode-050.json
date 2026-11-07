@@ -1,0 +1,18 @@
+{
+  "episode": 50,
+  "best_hook": {"block": "E050-S01-B004", "why": "Overhead shot of a woman in bed with a bare-chested priest and the line 'A man in your collar isn't supposed to have that much left in him': instant forbidden-affair scandal."},
+  "alt_hooks": ["E050-S01-B017", "E050-S01-B007"],
+  "best_cliffhanger": {"block": "E050-S02-B006", "why": "Agnes sees the noblewoman and the priest entwined through the door and her jaw drops; the secret now has a witness and the clip cuts before anyone knows she saw."},
+  "alt_cliffhangers": ["E050-S02-B007", "E050-S01-B017"],
+  "must_promos": [
+    {"start_block": "E050-S01-B017", "end_block": "E050-S02-B007",
+     "hook_block": "E050-S01-B017", "cliffhanger_block": "E050-S02-B006",
+     "why": "'Absolution is free. Discretion has a price.' as the hook, the corrupt bargain sealed with seduction and an embrace, then a maid walks in on them and gasps; cut on her horrified face."},
+    {"start_block": "E050-S01-B004", "end_block": "E050-S01-B017",
+     "hook_block": "E050-S01-B004", "cliffhanger_block": "E050-S01-B017",
+     "why": "Priest-in-bed scandal line, then 'Name your price' and his demand for the whole west territory's taxes, ending on 'Discretion has a price' before she agrees."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "Catherine, Father Thomas and Agnes are side characters and neither lead appears; a stranger does not know what 'the hearing' is or why Agnes witnessing this is dangerous, so the ad sells a scandal but not the show's premise.",
+  "notes": "The witness beat is only about 5 s at the very end, so any promo ending on it has to start no earlier than about 00:19."
+}

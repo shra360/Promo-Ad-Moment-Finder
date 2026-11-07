@@ -1,0 +1,18 @@
+{
+  "episode": 40,
+  "best_hook": {"block": "E040-S01-B014", "why": "On the cathedral steps a lord answers 'Imagine Juliana seeing this' with 'She won't be seeing anything for long' - a casual death threat."},
+  "alt_hooks": ["E040-S01-B012", "E040-S03-B011"],
+  "best_cliffhanger": {"block": "E040-S03-B013", "why": "'And its witch will be dead' - the execution is set for sunset and the exits are sealed, with no rescue in sight."},
+  "alt_cliffhangers": ["E040-S02-B008", "E040-S04-B013"],
+  "must_promos": [
+    {"start_block": "E040-S01-B014", "end_block": "E040-S03-B013",
+     "hook_block": "E040-S01-B014", "cliffhanger_block": "E040-S03-B013",
+     "why": "Guests gloat about Juliana's fate on the way into a society wedding, the elder confirms every entrance is guarded, and it cuts on 'its witch will be dead.'"},
+    {"start_block": "E040-S03-B011", "end_block": "E040-S04-B013",
+     "hook_block": "E040-S03-B011", "cliffhanger_block": "E040-S04-B013",
+     "why": "The sunset murder vow, then the lavish bridal entrance and the couple's smug triumph at the altar - the villains look unstoppable just before the payoff."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "Neither Juliana nor Alexander appears: a stranger does not know who the Harringtons are to her, why she is called a witch, or that a rescue is coming; the episode is all threat with no visible victim or hero.",
+  "notes": "Set-up episode for the wedding/execution showdown; the threats are strong but the heroine is absent."
+}

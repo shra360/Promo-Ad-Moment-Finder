@@ -1,0 +1,18 @@
+{
+  "episode": 27,
+  "best_hook": {"block": "E027-S01-B077", "why": "Maid declares in front of the nobles that someone has been poisoning the Duchess; shocking accusation that is instantly twisted against her."},
+  "alt_hooks": ["E027-S01-B081", "E027-S01-B016"],
+  "best_cliffhanger": {"block": "E027-S01-B093", "why": "Framed heroine is seized and dragged off by the guard; her fate is unresolved."},
+  "alt_cliffhangers": ["E027-S01-B026", "E027-S01-B039"],
+  "must_promos": [
+    {"start_block": "E027-S01-B077", "end_block": "E027-S01-B095",
+     "hook_block": "E027-S01-B077", "cliffhanger_block": "E027-S01-B093",
+     "why": "Self-contained frame-up: she exposes the poisoning, Catherine twists it into a confession, the nobleman condemns her and orders 'Take her', cut as she is dragged away."},
+    {"start_block": "E027-S01-B016", "end_block": "E027-S01-B039",
+     "hook_block": "E027-S01-B016", "cliffhanger_block": "E027-S01-B039",
+     "why": "Lost-son ring reveal, the Duchess asks the husband's name, pounding interrupts, villains burst in and Catherine demands 'Show me your hand' with the ring about to be exposed."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "Strangers may not realise the accusers (Rupert and Catherine) are the actual poisoners, so the irony of the frame is partly lost; the ring's significance needs the lost-son line to land.",
+  "notes": ""
+}

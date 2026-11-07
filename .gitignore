@@ -1,0 +1,14 @@
+# Confidential: screenplays and anything derived from them
+data/
+runs/
+audit/
+reference.json
+*.zip
+
+# Local state and secrets
+.cache/
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.pytest_cache/

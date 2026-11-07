@@ -1,0 +1,18 @@
+{
+  "episode": 30,
+  "best_hook": {"block": "E030-S01-B018", "why": "An old nobleman rams his cane into a younger man's chest and pins him to the wall - a violent, startling opener."},
+  "alt_hooks": ["E030-S02-B040", "E030-S01-B007"],
+  "best_cliffhanger": {"block": "E030-S02-B044", "why": "'Tomorrow, she stops being a prisoner. She becomes a witch' - a death sentence is decided and the trial has not happened yet."},
+  "alt_cliffhangers": ["E030-S03-B004", "E030-S02-B020"],
+  "must_promos": [
+    {"start_block": "E030-S01-B018", "end_block": "E030-S02-B020",
+     "hook_block": "E030-S01-B018", "cliffhanger_block": "E030-S02-B020",
+     "why": "Cane pin and 'you burn them!' escalate into a plan to frame the prisoner as a poisoner, cut on 'Then call it witchcraft.'"},
+    {"start_block": "E030-S02-B040", "end_block": "E030-S03-B004",
+     "hook_block": "E030-S02-B040", "cliffhanger_block": "E030-S03-B004",
+     "why": "'She will hang' and the arrest warrant, ending on the chained, shivering heroine in the flooded cell, who does not yet know what is coming."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "Juliana is off screen until the last seconds, so 'she', 'the prisoner' and 'the Ashcroft girl' are unclear to a stranger; the Duchess poisoning and who the Elder Nobleman is are not explained.",
+  "notes": "A deadly threat built step by step; strongest when the cut ends on the heroine's face so the target is visible."
+}

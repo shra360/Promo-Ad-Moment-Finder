@@ -1,0 +1,18 @@
+{
+  "episode": 48,
+  "best_hook": {"block": "E048-S01-B003", "why": "The villain turns from the window with a venomous threat: two words and the healer's crown rolls back into the gutter."},
+  "alt_hooks": ["E048-S02-B004", "E048-S01-B013"],
+  "best_cliffhanger": {"block": "E048-S01-B014", "why": "A chilling threat ('doors can be closed from the other side') that has only just been made; the plan behind it is not yet revealed."},
+  "alt_cliffhangers": ["E048-S02-B027", "E048-S02-B015"],
+  "must_promos": [
+    {"start_block": "E048-S01-B003", "end_block": "E048-S01-B014",
+     "hook_block": "E048-S01-B003", "cliffhanger_block": "E048-S01-B014",
+     "why": "A tight villain-monologue cut: the threat against the healer, the 'ten days' countdown, ending on the menacing door line."},
+    {"start_block": "E048-S02-B004", "end_block": "E048-S02-B027",
+     "hook_block": "E048-S02-B004", "cliffhanger_block": "E048-S02-B027",
+     "why": "'Lock it.' and the deadbolt click open a secret meeting. Catherine reveals her humiliation was useful, bribes the maid with gold, and ends by ordering the priest brought in secretly, which leaves the plot hanging."}
+  ],
+  "promo_strength": 2,
+  "standalone_risk": "There is no opponent on screen. A stranger won't know who 'that healer' is, what the ten days and the council hearing are, or why secretly summoning a priest matters.",
+  "notes": "This is a quiet setup episode: a villain alone, then with her maid. The threats are only talked about."
+}

@@ -1,0 +1,18 @@
+{
+  "episode": 20,
+  "best_hook": {"block": "E020-S02-B014", "why": "Over tea, a nobleman casually waits for his cousin's death to be sealed so he can take the title - a villain plot stated outright."},
+  "alt_hooks": ["E020-S02-B017", "E020-S04-B004"],
+  "best_cliffhanger": {"block": "E020-S02-B026", "why": "'Not through the winter. I've ensured her quiet comfort' - he all but admits he is poisoning the old Duchess, and nobody stops him."},
+  "alt_cliffhangers": ["E020-S04-B014", "E020-S02-B024"],
+  "must_promos": [
+    {"start_block": "E020-S02-B014", "end_block": "E020-S02-B026",
+     "hook_block": "E020-S02-B014", "cliffhanger_block": "E020-S02-B026",
+     "why": "Tight villain cut: claim the title once the cousin is declared dead, 'the old woman still breathes', and it ends on his veiled confession that he is killing her."},
+    {"start_block": "E020-S03-B017", "end_block": "E020-S04-B014",
+     "hook_block": "E020-S03-B017", "cliffhanger_block": "E020-S04-B014",
+     "why": "Fallen noblewoman in a barn vows 'I am not finished', then the schemers say she has 'no rival' and claim the house - dramatic irony that sets up a showdown."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "The poisoning is only implied, and a stranger cannot tell who Alexander, the Dowager or the barn woman are to the scheming couple; the barn and drawing-room scenes are never connected on screen.",
+  "notes": "Mostly villain exposition with no confrontation; the strength comes from the implied murder plot."
+}

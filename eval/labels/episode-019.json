@@ -1,0 +1,15 @@
+{
+  "episode": 19,
+  "best_hook": {"block": "E019-S02-B003", "why": "A scarred man bows to the shabby soldier in the woods and says 'Your Grace' - the secret-duke reveal in two words."},
+  "alt_hooks": ["E019-S02-B018", "E019-S01-B003"],
+  "best_cliffhanger": {"block": "E019-S02-B025", "why": "'Then Ashburg will remember who it belongs to' - vengeance vow on a dramatic push-in; the reclaiming has not begun."},
+  "alt_cliffhangers": ["E019-S02-B022", "E019-S02-B020"],
+  "must_promos": [
+    {"start_block": "E019-S02-B003", "end_block": "E019-S02-B025",
+     "hook_block": "E019-S02-B003", "cliffhanger_block": "E019-S02-B025",
+     "why": "'Your Grace' opener, the usurper sitting in his father's chair, 'My mother is a prisoner in her own house', 'Everyone believes you are dead' / 'Let them believe it a little longer', ending on the vow - hidden-identity revenge setup in one take."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "The informant's report is dense with unexplained names (Lord Sterling, Rupert, Lady Catherine, Ashburg) and 'her' is unclear until 'My mother'; there is no on-screen villain, and the middle is talky exposition.",
+  "notes": "Opening scene (ruins, villagers' kindness) and closing barn scene are quiet; only the forest meeting is promo material."
+}

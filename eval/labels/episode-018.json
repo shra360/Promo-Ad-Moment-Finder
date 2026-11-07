@@ -1,0 +1,18 @@
+{
+  "episode": 18,
+  "best_hook": {"block": "E018-S01-B012", "why": "Bedroom door kicked open with a violent crash and the hero bursts through a wall of fire to a coughing woman - instant life-or-death action."},
+  "alt_hooks": ["E018-S03-B003", "E018-S01-B006"],
+  "best_cliffhanger": {"block": "E018-S03-B017", "why": "The burning rafter splits directly above her and she screams 'Alexander!' - cut before the tackle, her survival unresolved."},
+  "alt_cliffhangers": ["E018-S05-B017", "E018-S02-B007"],
+  "must_promos": [
+    {"start_block": "E018-S03-B002", "end_block": "E018-S03-B017",
+     "hook_block": "E018-S03-B003", "cliffhanger_block": "E018-S03-B017",
+     "why": "'The ledger!' / 'Leave it!' / 'No!' - she breaks free and runs back into the fire for her mother's book as beams collapse, ending on the rafter splitting over her head; clear stakes, peak peril, no resolution."},
+    {"start_block": "E018-S01-B012", "end_block": "E018-S02-B007",
+     "hook_block": "E018-S01-B012", "cliffhanger_block": "E018-S02-B007",
+     "why": "Door kicked in, hero hauls her out of bed through smoke, only for wall-high flames to seal the exit: 'We cannot get through!' - trapped, cut before the escape route."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "The fire's cause (arson by enemies) is only implied at the very end ('Someone wanted us out'); within the rescue cuts a stranger sees a disaster, not a villain, and the ledger's importance rests on one line ('It's my mother's!').",
+  "notes": "Closing vengeance beat ('They took our home. I will not let them take anything else' / 'What are you going to do?') is a usable alternative ending but its opening visuals are an embrace, not the fire."
+}

@@ -1,0 +1,18 @@
+{
+  "episode": 42,
+  "best_hook": {"block": "E042-S01-B021", "why": "The usurper insists the man in front of him is dead: a dead-man-returns reveal in one line."},
+  "alt_hooks": ["E042-S01-B010", "E042-S01-B003"],
+  "best_cliffhanger": {"block": "E042-S01-B037", "why": "Newly proclaimed Duke, hand on his sabre, promises to settle the score with Rupert: a vengeful threat with the reckoning still to come."},
+  "alt_cliffhangers": ["E042-S01-B021", "E042-S01-B017"],
+  "must_promos": [
+    {"start_block": "E042-S01-B021", "end_block": "E042-S01-B037",
+     "hook_block": "E042-S01-B021", "cliffhanger_block": "E042-S01-B037",
+     "why": "From 'Alexander died!' through 'here I stand', his mother's tearful public proclamation that he is the rightful Duke, to his sword-hand threat at Rupert; full identity-reveal payoff that stops on the coming revenge."},
+    {"start_block": "E042-S01-B003", "end_block": "E042-S01-B021",
+     "hook_block": "E042-S01-B003", "cliffhanger_block": "E042-S01-B021",
+     "why": "Mystery-stranger cut: 'Who are you?' 'You already know', the guards refuse the groom's arrest order 'because we know who he is', ending on the panicked 'Alexander died!' so the viewer wants the reveal."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "Why Juliana is in chains and what Rupert 'stole' are not explained, and the mother's reunion carries weight only if you know Alexander was presumed dead for years.",
+  "notes": "Middle stretch (mother's reunion, 00:40-01:04) is slow and sentimental; strongest material is the guard refusal and the closing threat."
+}

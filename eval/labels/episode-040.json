@@ -1,0 +1,15 @@
+{
+  "episode": 40,
+  "best_hook": {"block": "E040-S01-B014", "why": "Cold nobleman on the cathedral steps: 'She won't be seeing anything for long.' - a death threat dropped casually"},
+  "alt_hooks": ["E040-S01-B012", "E040-S03-B013"],
+  "best_cliffhanger": {"block": "E040-S03-B013", "why": "Conspirator smiles down on the wedding: 'And its witch will be dead.' - execution sealed, exits covered, nothing resolved"},
+  "alt_cliffhangers": ["E040-S02-B008", "E040-S04-B001"],
+  "must_promos": [
+    {"start_block": "E040-S01-B013", "end_block": "E040-S03-B013",
+     "hook_block": "E040-S01-B014", "cliffhanger_block": "E040-S03-B013",
+     "why": "Wedding guests gloat about Juliana's death, the groom frets, the schemer confirms every entrance is covered and ends on 'its witch will be dead' - villains at peak confidence"}
+  ],
+  "promo_strength": 2,
+  "standalone_risk": "Neither Juliana nor the hero appears; a stranger hears side characters gloat about an unseen woman and a 'witch' with no idea who she is or who might stop them",
+  "notes": "Transitional wedding-arrival episode; the doors opening is only the bride, so it cannot be used as a hero-arrival tease honestly."
+}

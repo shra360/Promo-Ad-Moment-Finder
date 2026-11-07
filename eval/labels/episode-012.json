@@ -1,0 +1,18 @@
+{
+  "episode": 12,
+  "best_hook": {"block": "E012-S01-B032", "why": "A sister purring 'I want to see you crawl' is a cruel, scroll-stopping line that promises humiliation."},
+  "alt_hooks": ["E012-S01-B002", "E012-S01-B045"],
+  "best_cliffhanger": {"block": "E012-S01-B045", "why": "The deadly ultimatum, 'your husband hangs from the gallows', has just been whispered and Juliana has not yet answered."},
+  "alt_cliffhangers": ["E012-S01-B054", "E012-S01-B032"],
+  "must_promos": [
+    {"start_block": "E012-S01-B031", "end_block": "E012-S01-B045",
+     "hook_block": "E012-S01-B032", "cliffhanger_block": "E012-S01-B045",
+     "why": "Hook on 'crawl', lay out the frozen-thorn bare-hands ordeal and the deal, then cut on the gallows threat before she decides."},
+    {"start_block": "E012-S01-B001", "end_block": "E012-S01-B032",
+     "hook_block": "E012-S01-B002", "cliffhanger_block": "E012-S01-B032",
+     "why": "Opens on the husband being handcuffed for theft, Juliana fights back and accuses the villains, and it ends on Clarissa naming her price: 'I want to see you crawl.'"}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "Why the watch was in his coat (planted last episode) and who the magistrate is are not explained; the ordeal itself is only described, not shown.",
+  "notes": "Mostly dialogue in one room; the threat is strong but the visual payoff comes in the next episode."
+}

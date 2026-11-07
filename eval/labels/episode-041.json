@@ -1,0 +1,18 @@
+{
+  "episode": 41,
+  "best_hook": {"block": "E041-S01-B034", "why": "Chained, bruised woman throws a cutting line at the bride who paraded her: instant defiance-vs-cruelty hook with strong visuals."},
+  "alt_hooks": ["E041-S01-B007", "E041-S01-B013"],
+  "best_cliffhanger": {"block": "E041-S01-B052", "why": "Cathedral doors just exploded and armed silhouettes emerge from the smoke as the chained heroine turns: who are they, what happens to the wedding?"},
+  "alt_cliffhangers": ["E041-S01-B048"],
+  "must_promos": [
+    {"start_block": "E041-S01-B034", "end_block": "E041-S01-B052",
+     "hook_block": "E041-S01-B034", "cliffhanger_block": "E041-S01-B052",
+     "why": "Opens on the chained heroine's defiance, shows the scheming couple gloating over the title, then the cathedral entrance explodes and armed men stride through the smoke; cut before anyone is identified."},
+    {"start_block": "E041-S01-B007", "end_block": "E041-S01-B034",
+     "hook_block": "E041-S01-B007", "cliffhanger_block": "E041-S01-B034",
+     "why": "Pure public-humiliation cut: the bride announces a punishment for the woman who defied the family, the prisoner is marched in in shackles, nobles sneer, and it ends on her unbowed retort with Catherine's response hanging."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "A stranger does not know who Juliana is to Catherine and Rupert or why she is in chains, and the attackers behind the explosion are never shown, so the rescue meaning of the cliffhanger depends on knowing Alexander.",
+  "notes": "Explosion lands at 01:21; any 20-60 s span containing it must start after ~00:33, so the humiliation build-up and the blast cannot both be fully included."
+}

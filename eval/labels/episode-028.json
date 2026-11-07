@@ -1,0 +1,18 @@
+{
+  "episode": 28,
+  "best_hook": {"block": "E028-S01-B053", "why": "Catherine violently yanks the mother's locket off the restrained maid's neck; physical cruelty in the first second."},
+  "alt_hooks": ["E028-S01-B031", "E028-S01-B013"],
+  "best_cliffhanger": {"block": "E028-S01-B073", "why": "Catherine reads the name and exposes her hidden identity, 'Lady Juliana Ashcroft'; the reveal lands and the consequences are unknown."},
+  "alt_cliffhangers": ["E028-S01-B095", "E028-S01-B036"],
+  "must_promos": [
+    {"start_block": "E028-S01-B053", "end_block": "E028-S01-B073",
+     "hook_block": "E028-S01-B053", "cliffhanger_block": "E028-S01-B073",
+     "why": "Locket ripped away, 'gutter rat', heirloom thrown to the floor, villainess opens the mother's book and unmasks her as Lady Juliana Ashcroft; cut on the triumphant reveal."},
+    {"start_block": "E028-S01-B013", "end_block": "E028-S01-B036",
+     "hook_block": "E028-S01-B013", "cliffhanger_block": "E028-S01-B036",
+     "why": "Framed as a poisoner, then the Duchess rises to defend her and accuses Rupert and Catherine, only to collapse mid-sentence before she can finish."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "A stranger may not know Juliana is innocent unless the Duchess's defence is included, nor why the name reveal is dangerous (disgraced noble hiding as a maid) or what the herbarium is.",
+  "notes": "Episode-ending gallows threat (B094-B095) is a strong alternative end point but cannot share a 60 s span with the locket hook."
+}

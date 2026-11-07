@@ -1,0 +1,18 @@
+{
+  "episode": 1,
+  "best_hook": {"block": "E001-S01-B027", "why": "Woman in gold tells the bride in white, at the altar, 'Because he is marrying me' - instant betrayal reveal a stranger gets in two seconds."},
+  "alt_hooks": ["E001-S01-B024", "E001-S01-B008"],
+  "best_cliffhanger": {"block": "E001-S01-B093", "why": "Jilted bride's tears harden into cold defiance under an ominous swell - viewer wants to see her revenge."},
+  "alt_cliffhangers": ["E001-S01-B052", "E001-S01-B084"],
+  "must_promos": [
+    {"start_block": "E001-S01-B027", "end_block": "E001-S01-B052",
+     "hook_block": "E001-S01-B027", "cliffhanger_block": "E001-S01-B052",
+     "why": "Opens on the sister claiming the groom, runs through 'I changed my mind' and the sister's gloating, and cuts on 'he was never going to marry you' - pure altar betrayal."},
+    {"start_block": "E001-S01-B075", "end_block": "E001-S01-B094",
+     "hook_block": "E001-S01-B075", "cliffhanger_block": "E001-S01-B093",
+     "why": "Starts on the venomous 'daughter people tolerate' line, groom calls her plain and worthless, and ends on her face turning to cold resolve - humiliation into implied revenge."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "The gold-gowned woman is only identified as her sister by one 'sister' line; the matriarch's relation to Juliana is never stated; nothing hints at the soldier/duke premise of the title.",
+  "notes": ""
+}

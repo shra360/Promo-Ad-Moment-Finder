@@ -1,0 +1,18 @@
+{
+  "episode": 47,
+  "best_hook": {"block": "E047-S03-B009", "why": "A noblewoman reveals that the woman kneeling in the mud helped poison her and orders her cast into the road: a reveal and a punishment in one line."},
+  "alt_hooks": ["E047-S03-B015", "E047-S03-B013"],
+  "best_cliffhanger": {"block": "E047-S04-B026", "why": "A clean ultimatum (take the apron or leave the county) cut before the humiliated villain decides."},
+  "alt_cliffhangers": ["E047-S04-B012", "E047-S03-B017"],
+  "must_promos": [
+    {"start_block": "E047-S03-B012", "end_block": "E047-S04-B026",
+     "hook_block": "E047-S03-B013", "cliffhanger_block": "E047-S04-B026",
+     "why": "The Duke orders the scheming impostor thrown out, she screams for mercy in the mud, and the healer wife stops him only to make her a scullery maid. It ends on the take-it-or-leave ultimatum, before Catherine chooses."},
+    {"start_block": "E047-S03-B009", "end_block": "E047-S04-B012",
+     "hook_block": "E047-S03-B009", "cliffhanger_block": "E047-S04-B012",
+     "why": "A punchier cut: the poison accusation, the order to throw her out, 'Stop.', the apparent mercy, then the twist 'As a scullery maid.' lands and the clip cuts on her shock."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger gets only hints of what Catherine did (impostor bride, aided a poisoning). The clip does not show that she is secretly scheming to stay, so her submission can read as a resolved ending.",
+  "notes": "Scene 1 (Catherine plotting with a conspirator) and Scene 2 (the bedroom reassurance) are weak. All the promo value is in the courtyard and hall humiliation."
+}

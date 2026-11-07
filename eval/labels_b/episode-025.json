@@ -1,0 +1,18 @@
+{
+  "episode": 25,
+  "best_hook": {"block": "E025-S01-B014", "why": "He pulls back her cloak to reveal a raw, bloody riding-crop welt across her shoulder: the one strong visual shock in a talky episode."},
+  "alt_hooks": ["E025-S01-B009", "E025-S01-B049"],
+  "best_cliffhanger": {"block": "E025-S01-B024", "why": "After 'Who did this? ... Who?' she finally names 'Lady Catherine' and the clip cuts on his fury, so the viewer wants to see the revenge."},
+  "alt_cliffhangers": ["E025-S01-B051", "E025-S01-B055"],
+  "must_promos": [
+    {"start_block": "E025-S01-B009", "end_block": "E025-S01-B024",
+     "hook_block": "E025-S01-B009", "cliffhanger_block": "E025-S01-B024",
+     "why": "He grabs her shoulder and she winces, the bloody welt is revealed, he demands who did it, she resists, then names Lady Catherine; a tight protective-husband beat that cuts on the villain's name."},
+    {"start_block": "E025-S01-B045", "end_block": "E025-S01-B055",
+     "hook_block": "E025-S01-B045", "cliffhanger_block": "E025-S01-B055",
+     "why": "'But it wasn't age.' leads to 'Poison.' 'Arsenic.' and his clenched fist, ending on the chilling slow-poisoning method with the poisoner unnamed."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "A stranger does not know who Lady Catherine or the Dowager Duchess are, why Juliana was disguised as a maid at Ashburg Manor, or why the Dowager matters so much to Alexander.",
+  "notes": "Mostly two-person dialogue on a forest path; the wound reveal is the only physical moment. The poison reveal cannot be joined to the wound reveal inside 60 s."
+}

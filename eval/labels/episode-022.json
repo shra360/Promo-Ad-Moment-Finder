@@ -1,0 +1,18 @@
+{
+  "episode": 22,
+  "best_hook": {"block": "E022-S01-B005", "why": "Whispered warning that if anyone recognizes her, everything is over - instantly sets up a disguised heroine in danger."},
+  "alt_hooks": ["E022-S02-B020", "E022-S02-B003"],
+  "best_cliffhanger": {"block": "E022-S04-B018", "why": "The Duchess convulses and Juliana demands 'Who has been treating you?' - poison implied, culprit unknown."},
+  "alt_cliffhangers": ["E022-S04-B014", "E022-S02-B003"],
+  "must_promos": [
+    {"start_block": "E022-S01-B005", "end_block": "E022-S02-B003",
+     "hook_block": "E022-S01-B005", "cliffhanger_block": "E022-S02-B003",
+     "why": "A lady sheds her title to sneak into the manor as a maid to save a dying Duchess, and the moment the door shuts a stern housekeeper demands 'Who is this?' - caught on the threshold."},
+    {"start_block": "E022-S02-B024", "end_block": "E022-S04-B018",
+     "hook_block": "E022-S02-B024", "cliffhanger_block": "E022-S04-B018",
+     "why": "Harsh housekeeper put-down, a sneak into the forbidden West Wing, and the discovery that the dying Duchess's illness is no ordinary fever, ending on her convulsing and the question of who has been treating her."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "A stranger may not grasp why a lady would disguise herself or who Catherine and Rupert are; the walk through the grand hall in the second promo is dead air.",
+  "notes": "Tension is suspense rather than confrontation - no slap or outright exposure; the poison discovery is only implied at the very end."
+}

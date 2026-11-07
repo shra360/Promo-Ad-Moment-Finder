@@ -1,0 +1,114 @@
+{
+ "episodes_compared": 10,
+ "tolerance_s": 3.0,
+ "hook_best_agree": 0.8,
+ "hook_any_agree": 1.0,
+ "cliffhanger_best_agree": 1.0,
+ "cliffhanger_any_agree": 1.0,
+ "must_promo_overlap": 1.0,
+ "strength_exact": 0.7,
+ "strength_within_1": 1.0,
+ "strength_spearman": 0.847,
+ "per_episode": [
+  {
+   "episode": 1,
+   "hook_best_agree": true,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 5,
+   "strength_b": 5
+  },
+  {
+   "episode": 5,
+   "hook_best_agree": true,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 4,
+   "strength_b": 5
+  },
+  {
+   "episode": 10,
+   "hook_best_agree": true,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 3,
+   "strength_b": 3
+  },
+  {
+   "episode": 15,
+   "hook_best_agree": true,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 4,
+   "strength_b": 4
+  },
+  {
+   "episode": 20,
+   "hook_best_agree": true,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 3,
+   "strength_b": 3
+  },
+  {
+   "episode": 25,
+   "hook_best_agree": false,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 3,
+   "strength_b": 3
+  },
+  {
+   "episode": 30,
+   "hook_best_agree": true,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 3,
+   "strength_b": 4
+  },
+  {
+   "episode": 35,
+   "hook_best_agree": true,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 3,
+   "strength_b": 3
+  },
+  {
+   "episode": 40,
+   "hook_best_agree": true,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 2,
+   "strength_b": 3
+  },
+  {
+   "episode": 50,
+   "hook_best_agree": false,
+   "hook_any_agree": true,
+   "cliffhanger_best_agree": true,
+   "cliffhanger_any_agree": true,
+   "must_overlap": true,
+   "strength_a": 4,
+   "strength_b": 4
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "episode": 29,
+  "best_hook": {"block": "E029-S02-B011", "why": "Villainess coldly promises the magistrate will call the heroine's medicine witchcraft; a deadly frame stated outright."},
+  "alt_hooks": ["E029-S02-B019", "E029-S03-B002"],
+  "best_cliffhanger": {"block": "E029-S02-B037", "why": "Catherine mocks what a penniless veteran could do against Ashbrook; the question hangs, with irony since he is secretly a duke."},
+  "alt_cliffhangers": ["E029-S02-B021", "E029-S03-B022"],
+  "must_promos": [
+    {"start_block": "E029-S02-B011", "end_block": "E029-S02-B037",
+     "hook_block": "E029-S02-B011", "cliffhanger_block": "E029-S02-B037",
+     "why": "Witchcraft threat, 'I can burn it', corpse at the end of the rope, 'you should have stayed forgotten', 'my husband will find me' and the sneering challenge left unanswered."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "'It' (the mother's herbarium) is unexplained if the clip starts at the witchcraft line, and a stranger does not know the scarred veteran husband is secretly a duke, so the closing irony is lost.",
+  "notes": "Dungeon shove and breakdown in scene 3 (S03-B002 to S03-B022) is a usable second cut but its ending is a vow rather than an open threat."
+}

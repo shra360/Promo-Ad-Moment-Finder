@@ -1,0 +1,18 @@
+{
+  "episode": 7,
+  "best_hook": {"block": "E007-S01-B032", "why": "Gerald lunging with a finger in her face, 'I have enough influence to make a beggar disappear', is a deadly threat that stops the scroll."},
+  "alt_hooks": ["E007-S01-B009", "E007-S01-B011"],
+  "best_cliffhanger": {"block": "E007-S01-B033", "why": "'And your husband?' leaves the threat to make him disappear hanging in the air, with the husband not yet on screen."},
+  "alt_cliffhangers": ["E007-S02-B002", "E007-S03-B008"],
+  "must_promos": [
+    {"start_block": "E007-S01-B009", "end_block": "E007-S01-B033",
+     "hook_block": "E007-S01-B009", "cliffhanger_block": "E007-S01-B033",
+     "why": "A public humiliation: rich ex and his companion mock the mud-handed heroine ('You look like a servant'), she defies them, and he escalates to a threat against her husband. Cut before the husband arrives."},
+    {"start_block": "E007-S01-B032", "end_block": "E007-S03-B008",
+     "hook_block": "E007-S01-B032", "cliffhanger_block": "E007-S03-B008",
+     "why": "Opens on the threat, the scarred husband walks out of the fog, drops the firewood and towers silently over Gerald, who freezes; cut on the trembling 'What are you staring at?' before he flees."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger does not know who Gerald and the woman in lavender are to Juliana (former fiance and rival?), or that the 'penniless beggar' is secretly a duke, so the weight of Gerald's fear is under-explained.",
+  "notes": "No physical blow, but humiliation plus a threat plus a silent intimidation payoff is classic ad material. Promo 2 satisfies the 'husband protects her' fantasy; promo 1 is the stronger cliffhanger."
+}

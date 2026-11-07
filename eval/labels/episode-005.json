@@ -1,0 +1,18 @@
+{
+  "episode": 5,
+  "best_hook": {"block": "E005-S01-B032", "why": "Stepmother wrenches the bride's late mother's ledger away and flings it into the mud as she screams - a cruel, slap-level visual."},
+  "alt_hooks": ["E005-S01-B007", "E005-S01-B017"],
+  "best_cliffhanger": {"block": "E005-S01-B058", "why": "Scarred husband to the gloating ex-groom: 'Choose your next words carefully' - a threat just made, grin wavering, nothing resolved."},
+  "alt_cliffhangers": ["E005-S01-B034", "E005-S01-B017"],
+  "must_promos": [
+    {"start_block": "E005-S01-B032", "end_block": "E005-S01-B058",
+     "hook_block": "E005-S01-B032", "cliffhanger_block": "E005-S01-B058",
+     "why": "Mother's ledger thrown in the mud, sister and ex laugh, bride kneels in the dirt in her gown, husband retrieves it, and it cuts on his lethal warning to the ex."},
+    {"start_block": "E005-S01-B007", "end_block": "E005-S01-B034",
+     "hook_block": "E005-S01-B007", "cliffhanger_block": "E005-S01-B034",
+     "why": "Father strips her of name, dowry and inheritance ('you are dead to the Ashcroft family'), then the stepmother seizes her mother's ledger and it lands in the mud as the cut."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger won't know Lady Ashcroft ('Barbara') is the stepmother or why the ledger matters beyond 'your mother's legacy'; why she is disowned (marrying a stranger) is only clear in the second cut, and the husband's secret identity is not hinted.",
+  "notes": ""
+}

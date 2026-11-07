@@ -1,0 +1,18 @@
+{
+  "episode": 23,
+  "best_hook": {"block": "E023-S01-B040", "why": "Cold, deadly line 'Someone is poisoning her.' over a dying woman's bed - a shocking reveal in one breath."},
+  "alt_hooks": ["E023-S01-B045", "E023-S01-B046"],
+  "best_cliffhanger": {"block": "E023-S01-B066", "why": "The door latch clacks and the door creaks open on Juliana mid-antidote - caught in the forbidden room, intruder unseen."},
+  "alt_cliffhangers": ["E023-S01-B063", "E023-S01-B045"],
+  "must_promos": [
+    {"start_block": "E023-S01-B040", "end_block": "E023-S01-B067",
+     "hook_block": "E023-S01-B040", "cliffhanger_block": "E023-S01-B066",
+     "why": "Poison reveal, 'Arsenic', the Duchess choking, a race to grind an antidote, then footsteps and the door opening - reveal, ticking clock and capture threat in one span."},
+    {"start_block": "E023-S01-B016", "end_block": "E023-S01-B045",
+     "hook_block": "E023-S01-B016", "cliffhanger_block": "E023-S01-B045",
+     "why": "The physician says her heart is failing, Juliana flatly says 'No', matches the symptoms in her mother's journal and lands the word 'Arsenic' - a diagnosis-reveal cut that ends on the shock."}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "A stranger will not know who the Duchess is, why the heroine is dressed as a maid, or who might be poisoning her; the journal-reading stretch in the second promo is slow.",
+  "notes": "No physical confrontation, but a clear murder plot reveal plus an intruder at the door make it strong ad material."
+}

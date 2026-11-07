@@ -1,0 +1,18 @@
+{
+  "episode": 14,
+  "best_hook": {"block": "E014-S01-B002", "why": "A blood-streaked, mud-caked hand uncurling among thorns to reveal an emerald ring is an intriguing opening image."},
+  "alt_hooks": ["E014-S01-B017", "E014-S03-B005"],
+  "best_cliffhanger": {"block": "E014-S03-B023", "why": "His scarred fist clenches beside the bucket of bloody water: vengeance is promised but not yet taken."},
+  "alt_cliffhangers": ["E014-S03-B020", "E014-S01-B017"],
+  "must_promos": [
+    {"start_block": "E014-S01-B001", "end_block": "E014-S01-B017",
+     "hook_block": "E014-S01-B002", "cliffhanger_block": "E014-S01-B017",
+     "why": "Bloody hand holds up the ring, 'Now release my husband', the cuffs fall away, he cradles her shredded palms, and it cuts on 'What have they done to you?'"},
+    {"start_block": "E014-S03-B004", "end_block": "E014-S03-B024",
+     "hook_block": "E014-S03-B005", "cliffhanger_block": "E014-S03-B023",
+     "why": "Tender bandaging by the fire builds to his dark vow that no one will hurt her again and a clenched fist of coming revenge."}
+  ],
+  "promo_strength": 2,
+  "standalone_risk": "There is no antagonist on screen, so a stranger does not see who hurt her, why the ring mattered, or who the vengeance is aimed at.",
+  "notes": "Quiet aftermath and romance beat; mainly useful as a revenge-setup tease."
+}

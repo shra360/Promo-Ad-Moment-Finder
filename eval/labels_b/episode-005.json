@@ -1,0 +1,18 @@
+{
+  "episode": 5,
+  "best_hook": {"block": "E005-S01-B032", "why": "Stepmother rips the dead mother's ledger from the bride's hands and hurls it into the mud: instant visual cruelty, no context needed."},
+  "alt_hooks": ["E005-S01-B017", "E005-S01-B007"],
+  "best_cliffhanger": {"block": "E005-S01-B058", "why": "The 'beggar' husband turns on the mocking Gerald with a lethal 'Choose your next words carefully' and the clip cuts before anyone answers."},
+  "alt_cliffhangers": ["E005-S01-B036", "E005-S01-B017"],
+  "must_promos": [
+    {"start_block": "E005-S01-B031", "end_block": "E005-S01-B058",
+     "hook_block": "E005-S01-B032", "cliffhanger_block": "E005-S01-B058",
+     "why": "Opens on the ledger flung into the mud, bride kneels in her white gown while the family laughs and calls her a beggar's wife, then the scarred husband quietly threatens Gerald; humiliation to protector payoff with the threat left hanging."},
+    {"start_block": "E005-S01-B007", "end_block": "E005-S01-B036",
+     "hook_block": "E005-S01-B007", "cliffhanger_block": "E005-S01-B036",
+     "why": "Father disowns the bride on the church steps (dowry, inheritance revoked, 'dead to the family'), stepmother throws her mother's book in the mud and the stepsister gloats; cut on the peak of the humiliation before she responds."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "A stranger does not learn who Barbara, Clarissa and Gerald are (stepmother, stepsister, Gerald's tie to the family) or that the bearded 'beggar' husband is secretly a duke, so the threat reads as bravado rather than a power reveal.",
+  "notes": "The middle of promo 1 (01:14-01:31) is tender and slower; an editor might trim it, but the span is kept continuous per the brief."
+}

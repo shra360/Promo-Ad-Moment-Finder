@@ -1,0 +1,18 @@
+{
+  "episode": 30,
+  "best_hook": {"block": "E030-S01-B018", "why": "Elder nobleman jams his cane into Rupert's chest and pins him to the wall while snarling to burn the 'peasant weed'."},
+  "alt_hooks": ["E030-S02-B020", "E030-S02-B026"],
+  "best_cliffhanger": {"block": "E030-S02-B044", "why": "'Tomorrow, she stops being a prisoner. She becomes a witch.' The death sentence is set but not yet carried out."},
+  "alt_cliffhangers": ["E030-S02-B040", "E030-S02-B022"],
+  "must_promos": [
+    {"start_block": "E030-S02-B020", "end_block": "E030-S02-B044",
+     "hook_block": "E030-S02-B020", "cliffhanger_block": "E030-S02-B044",
+     "why": "'Then call it witchcraft' opens, villains plan to manufacture evidence, buy the jury and hang her, Rupert writes the warrant, cut on 'she becomes a witch'."},
+    {"start_block": "E030-S01-B018", "end_block": "E030-S02-B022",
+     "hook_block": "E030-S01-B018", "cliffhanger_block": "E030-S02-B022",
+     "why": "Physical cane-pin hook, the plot escalates from hiding the prisoner to using the law, ending as Rupert realises witchcraft is a capital charge."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "Juliana is barely on screen (only the final shot), so a stranger hears villains plotting against an unseen 'she' without knowing who she is, why she is imprisoned, or who the elder nobleman is.",
+  "notes": "All-villain conspiracy scene; strong stakes but no protagonist confrontation."
+}

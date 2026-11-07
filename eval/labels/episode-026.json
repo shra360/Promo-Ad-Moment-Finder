@@ -1,0 +1,15 @@
+{
+  "episode": 26,
+  "best_hook": {"block": "E026-S01-B026", "why": "Bedridden duchess realizes her own family is poisoning her in her bed; instant betrayal stakes."},
+  "alt_hooks": ["E026-S01-B021", "E026-S01-B036"],
+  "best_cliffhanger": {"block": "E026-S01-B049", "why": "Duchess grips the maid and demands where she got the ring; identity reveal hangs unanswered."},
+  "alt_cliffhangers": ["E026-S01-B040", "E026-S01-B021"],
+  "must_promos": [
+    {"start_block": "E026-S01-B026", "end_block": "E026-S01-B049",
+     "hook_block": "E026-S01-B026", "cliffhanger_block": "E026-S01-B049",
+     "why": "Opens on the poisoning betrayal, establishes the maid as a cast-out noble, then the ring sighting, gasp and frantic 'Where did you get this ring?' cut before any answer."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "A stranger does not know why the ring matters to the Duchess (her lost son) or that Juliana is a disguised noblewoman, so the ring reaction reads as mystery without stakes; Rupert and Catherine are only names.",
+  "notes": "Quiet whispered bedside scene with no antagonist on screen; the payoff of the ring setup lands in episode 27, which is the stronger ad."
+}

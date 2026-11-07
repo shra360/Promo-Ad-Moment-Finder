@@ -1,0 +1,18 @@
+{
+  "episode": 21,
+  "best_hook": {"block": "E021-S01-B005", "why": "Barn doors slam open and a weeping girl screams that her little brother is dying - instant panic and stakes."},
+  "alt_hooks": ["E021-S01-B003", "E021-S01-B016"],
+  "best_cliffhanger": {"block": "E021-S03-B046", "why": "Ominous whisper that the Dowager Duchess is wasting away from a mysterious illness no one can stop - a new deadly mystery left hanging."},
+  "alt_cliffhangers": ["E021-S03-B043", "E021-S01-B022"],
+  "must_promos": [
+    {"start_block": "E021-S01-B003", "end_block": "E021-S01-B022",
+     "hook_block": "E021-S01-B005", "cliffhanger_block": "E021-S01-B022",
+     "why": "Slam-open hook, a dying child turned away by doctors for being poor, the heroine has lost everything, and the girl on her knees begging - cut before Juliana answers."},
+    {"start_block": "E021-S03-B037", "end_block": "E021-S03-B048",
+     "hook_block": "E021-S03-B037", "cliffhanger_block": "E021-S03-B048",
+     "why": "Resentment at the rich manor turns into the reveal that the Duchess is dying of a mysterious illness, ending on Juliana's stunned realization."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "A stranger does not know who the Dowager Duchess is or why her illness matters to Juliana, and the healing-the-boy middle is warm rather than tense; the plotting villains are never shown.",
+  "notes": "Mostly a compassionate healing episode; the strongest ad material is the opening plea and the closing Duchess reveal, which are too far apart for one continuous span."
+}

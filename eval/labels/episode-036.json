@@ -1,0 +1,18 @@
+{
+  "episode": 36,
+  "best_hook": {"block": "E036-S01-B074", "why": "Wailing mother screams 'They called her a witch!' - instant shock line that tells a stranger an innocent woman has been condemned"},
+  "alt_hooks": ["E036-S01-B085", "E036-S01-B062"],
+  "best_cliffhanger": {"block": "E036-S01-B119", "why": "Scarred man vows '...their dead Duke is coming home' before the wedding - revenge declared, nothing yet done"},
+  "alt_cliffhangers": ["E036-S01-B100", "E036-S01-B085"],
+  "must_promos": [
+    {"start_block": "E036-S01-B073", "end_block": "E036-S01-B100",
+     "hook_block": "E036-S01-B074", "cliffhanger_block": "E036-S01-B100",
+     "why": "Rapid-fire escalation witch -> cell -> condemned -> executed -> after the wedding -> in two days, ending on 'and killing my wife afterward' with the husband's rage just ignited"},
+    {"start_block": "E036-S01-B097", "end_block": "E036-S01-B121",
+     "hook_block": "E036-S01-B098", "cliffhanger_block": "E036-S01-B119",
+     "why": "Opens on the deadline threat 'marrying in two days... and killing my wife', builds through 'they stole my home' and the fist clench, cuts on the dead-Duke-returns vow and sting"}
+  ],
+  "promo_strength": 4,
+  "standalone_risk": "No villain or wife on screen; a stranger hears the names Rupert, Catherine and Juliana without faces, and the 'dead Duke' line only lands if the clip keeps that he was declared dead and his title stolen",
+  "notes": "All dialogue in one cabin, no physical confrontation; strength comes from the stacked reveals and the vow."
+}

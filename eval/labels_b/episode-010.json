@@ -1,0 +1,18 @@
+{
+  "episode": 10,
+  "best_hook": {"block": "E010-S01-B003", "why": "The door bangs open in a silent cottage and a man staggers in clutching a blood-soaked chest - a startling cold open."},
+  "alt_hooks": ["E010-S01-B024", "E010-S01-B048"],
+  "best_cliffhanger": {"block": "E010-S01-B059", "why": "His confession that her touch is the only medicine for his pain lands with their faces inches apart and her answer unspoken."},
+  "alt_cliffhangers": ["E010-S01-B030", "E010-S01-B056"],
+  "must_promos": [
+    {"start_block": "E010-S01-B003", "end_block": "E010-S01-B030",
+     "hook_block": "E010-S01-B003", "cliffhanger_block": "E010-S01-B030",
+     "why": "Bloody entrance, he lies it is a scratch, she orders his shirt off, and it cuts on her horrified 'Dear God' at a torso covered in battle scars."},
+    {"start_block": "E010-S01-B048", "end_block": "E010-S01-B059",
+     "hook_block": "E010-S01-B048", "cliffhanger_block": "E010-S01-B059",
+     "why": "Romance cut: 'Why do you look at me like that?', the near-kiss, his hand pressing hers to his heart, ending on the confession before she responds."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "No antagonist or stakes on screen: a stranger does not learn who Alexander is to her, why he is wounded (the 'tenant fields' excuse is never explained), or why his scars matter.",
+  "notes": "Pure two-hander romance/hurt-comfort; works for romance-targeted ads, weak for conflict-driven ones."
+}

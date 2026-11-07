@@ -1,0 +1,18 @@
+{
+  "episode": 1,
+  "best_hook": {"block": "E001-S01-B027", "why": "A bride in white at the altar hears the woman holding her groom's hand say 'Because he is marrying me' - instant, readable betrayal."},
+  "alt_hooks": ["E001-S01-B024", "E001-S01-B064"],
+  "best_cliffhanger": {"block": "E001-S01-B093", "why": "After the final insult the jilted bride stops crying and steels herself under a swelling drone - the revenge has not started yet."},
+  "alt_cliffhangers": ["E001-S01-B061", "E001-S01-B052"],
+  "must_promos": [
+    {"start_block": "E001-S01-B024", "end_block": "E001-S01-B061",
+     "hook_block": "E001-S01-B024", "cliffhanger_block": "E001-S01-B061",
+     "why": "Bride asks why her groom holds another woman's hand, the sister gloats he is marrying her and always knew, and the clip cuts on her father silently refusing to defend her."},
+    {"start_block": "E001-S01-B064", "end_block": "E001-S01-B094",
+     "hook_block": "E001-S01-B064", "cliffhanger_block": "E001-S01-B093",
+     "why": "The family turns on the bride in public ('the daughter people tolerate', 'plainness and low value') and it ends on her tears hardening into defiance."}
+  ],
+  "promo_strength": 5,
+  "standalone_risk": "The gold-gowned woman is only identified as her sister by one 'sister' line, the black-velvet matriarch's relation to Juliana is never stated, and nothing here hints at the soldier/duke premise of the title.",
+  "notes": "Whole episode is one continuous public-humiliation scene; almost any 40-55 s window works, the choice is mostly about where to cut."
+}

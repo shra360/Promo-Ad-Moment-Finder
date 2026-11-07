@@ -1,0 +1,18 @@
+{
+  "episode": 25,
+  "best_hook": {"block": "E025-S01-B009", "why": "He grabs her shoulder and she gasps in pain - 'You're hurt.' - with the bloody welt revealed seconds later."},
+  "alt_hooks": ["E025-S01-B014", "E025-S01-B017"],
+  "best_cliffhanger": {"block": "E025-S01-B024", "why": "She names her attacker, 'Lady Catherine', to a scarred man burning with fury - his reaction is left unresolved."},
+  "alt_cliffhangers": ["E025-S01-B055", "E025-S01-B085"],
+  "must_promos": [
+    {"start_block": "E025-S01-B009", "end_block": "E025-S01-B024",
+     "hook_block": "E025-S01-B009", "cliffhanger_block": "E025-S01-B024",
+     "why": "Pain reaction, bloody welt reveal, seething 'Who did this?', her refusal, his demand, and the name dropped - a protective-fury cut ending on the culprit's name."},
+    {"start_block": "E025-S01-B045", "end_block": "E025-S01-B055",
+     "hook_block": "E025-S01-B045", "cliffhanger_block": "E025-S01-B055",
+     "why": "'But it wasn't age.' - poison, arsenic, his clenched fist, and the chilling detail that someone is dosing her slowly to weaken her without killing her quickly, leaving the poisoner unknown."}
+  ],
+  "promo_strength": 3,
+  "standalone_risk": "A stranger does not know who Lady Catherine, Alexander or the Dowager are; most of the episode is a two-person conversation recapping earlier events, and it ends resolved with the pair walking off together.",
+  "notes": "Emotional protective-hero beat but no new confrontation; the poison material repeats the previous episode's reveal."
+}
