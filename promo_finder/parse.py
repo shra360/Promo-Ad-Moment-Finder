@@ -11,27 +11,33 @@ import re
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
-TS = r"(\d{1,2}):(\d{2})(?:\.(\d{1,3}))?"           # MM:SS(.ff)
+# A time is [HH:]MM:SS[.ff]. Block times: "Start: (MM:SS.ff) | End: (MM:SS.ff)", with the parentheses optional
+# and "|", "-", en/em dash, "," or ";" accepted as the separator.
+TS = r"(?:(\d{1,2}):)?(\d{1,2}):(\d{2})(?:\.(\d{1,3}))?"
 RE_TS = re.compile(rf"^{TS}$")
-RE_BLOCK_TIME = re.compile(rf"^Start:\s*\(\s*{TS}\s*\)\s*\|\s*End:\s*\(\s*{TS}\s*\)\s*$")
+RE_BLOCK_TIME = re.compile(
+    rf"^Start:\s*\(?\s*{TS}\s*\)?\s*[|\-\u2013\u2014,;]?\s*End:\s*\(?\s*{TS}\s*\)?\s*$", re.I)
+# A track or speaker label on its own line: "**CAMERA:**" or, without the bold markers, "CAMERA:".
+# The unbolded form must be upper case before any parenthesis, so "Scene heading: ..." never matches.
 RE_LABEL = re.compile(r"^\*\*(.+?):\*\*\s*$")
+RE_LABEL_PLAIN = re.compile(r"^([A-Z0-9][A-Z0-9 .'\-&/]*(?:\s*\([^)]*\))*)\s*:\s*$")
 RE_SCENE = re.compile(r"^SCENE\s+(\d+)\s*$")
-RE_FILE = re.compile(r"episode-(\d{3})-Episode\s+(\d+)\.txt$")
+RE_FILE = re.compile(r"episode-(\d{1,4})(?:-Episode\s+(\d+))?\.txt$", re.I)   # episode-001.txt or episode-001-Episode 123.txt
 
 NON_DIALOGUE = {"CAMERA", "ACTION", "SOUND FX", "SFX", "MUSIC", "TRANSITION", "TEXT", "TITLE", "SUPER"}
 
 
+def _secs(h, mm, ss, frac) -> float:
+    return (int(h) * 3600 if h else 0) + int(mm) * 60 + int(ss) + (float(f"0.{frac}") if frac else 0.0)
+
+
 def to_seconds(m_or_s: str) -> float | None:
-    m = RE_TS.match(m_or_s.strip())
-    if not m:
-        return None
-    mm, ss, frac = m.groups()
-    return int(mm) * 60 + int(ss) + (float(f"0.{frac}") if frac else 0.0)
+    m = RE_TS.match(m_or_s.strip().strip("()"))
+    return _secs(*m.groups()) if m else None
 
 
 def _group_secs(groups, offset: int) -> float:
-    mm, ss, frac = groups[offset:offset + 3]
-    return int(mm) * 60 + int(ss) + (float(f"0.{frac}") if frac else 0.0)
+    return _secs(*groups[offset:offset + 4])
 
 
 @dataclass
@@ -130,8 +136,7 @@ def parse_episode(path: str | Path) -> Episode:
         file_episode_id=fm.group(2) if fm else None,
         header_episode=None, logline=None, continuity_notes=None,
     )
-    if not fm:
-        ep.issues.append("filename does not match episode-NNN-Episode <id>.txt")
+    # a non-standard file name is fine: the number then comes from the EPISODE NUMBER header
 
     scene: Scene | None = None
     pending: dict | None = None   # block being assembled
@@ -208,17 +213,17 @@ def parse_episode(path: str | Path) -> Episode:
                 continue
             if low == "actions and dialogue:":
                 continue
-        m = RE_LABEL.match(s)
+        m = RE_LABEL.match(s) or (RE_LABEL_PLAIN.match(s) if scene is not None else None)
         if m:
             flush()
             pending = {"label": m.group(1).strip(), "start": None, "end": None, "text": [], "line_no": i}
             continue
         if pending is not None:
-            if pending["start"] is None and s.startswith("Start:"):
+            if pending["start"] is None and s.lower().startswith("start:"):
                 mt = RE_BLOCK_TIME.match(s)
                 if mt:
                     g = mt.groups()
-                    pending["start"], pending["end"] = _group_secs(g, 0), _group_secs(g, 3)
+                    pending["start"], pending["end"] = _group_secs(g, 0), _group_secs(g, 4)
                 else:
                     ep.issues.append(f"L{i}: unparseable time line '{s}'")
                 continue
@@ -229,6 +234,12 @@ def parse_episode(path: str | Path) -> Episode:
             ep.issues.append(f"L{i}: unrecognised line outside a block: '{s[:60]}'")
     flush()
 
+    timed = sum(1 for b in ep.blocks() if b.start is not None and b.end is not None)
+    total = sum(1 for _ in ep.blocks())
+    if total == 0:
+        ep.issues.append("UNUSABLE: no blocks found (check the **LABEL:** lines)")
+    elif timed < 0.8 * total:
+        ep.issues.append(f"UNUSABLE: only {timed} of {total} blocks have readable Start/End times")
     if not ep.has_start_marker:
         ep.issues.append("missing '--- SCRIPT START ---'")
     if not ep.has_end_marker:

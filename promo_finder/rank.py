@@ -3,6 +3,7 @@ then a weighted score, then dedupe by story beat, a per-episode cap, and a
 publish-first slate. Every candidate keeps a status and a reason."""
 from __future__ import annotations
 
+import math
 import re
 
 from .render import clip_blocks
@@ -15,16 +16,46 @@ def _words(t: str) -> set[str]:
     return {w for w in re.findall(r"[a-z]+", (t or "").lower()) if w not in STOP and len(w) > 2}
 
 
-def _jaccard(a: set, b: set) -> float:
-    return len(a & b) / len(a | b) if a and b else 0.0
+MIN_SHARED_INFO = 2.0   # shared words must carry at least this much rarity (about two distinctive words)
+
+
+def _same_words(a: set, b: set, thr: float, idf: dict | None) -> bool:
+    """Same story by wording: high overlap AND the overlap carries real information. Identical stock text
+    (a sound cue or line the show repeats every episode) has near-zero weight, so it never matches."""
+    if _jaccard(a, b, idf) < thr:
+        return False
+    return not idf or sum(idf.get(x, 1.0) for x in a & b) >= MIN_SHARED_INFO
+
+
+def _jaccard(a: set, b: set, idf: dict | None = None) -> float:
+    """Word overlap. With idf, each word counts by how rare it is across the show's episodes, so stock lines
+    and character names (present in most episodes) count for little and distinctive plot words count most."""
+    if not a or not b:
+        return 0.0
+    if idf:
+        w = lambda xs: sum(idf.get(x, 1.0) for x in xs)
+        union = w(a | b)
+        return w(a & b) / union if union > 0 else 0.0
+    return len(a & b) / len(a | b)
+
+
+def series_idf(episodes) -> dict[str, float]:
+    """ln((1+N)/df): near 0 for a word in every episode (stock lines, names), highest for a word in one
+    episode only; never exactly 0, so a one-episode run still compares words."""
+    n = len(episodes)
+    df: dict[str, int] = {}
+    for ep in episodes.values():
+        for wd in _words(" ".join(b.text for b in ep.blocks())):
+            df[wd] = df.get(wd, 0) + 1
+    return {wd: math.log((1 + n) / c) for wd, c in df.items()}
 
 
 def composite(j: Judgement, weights: dict) -> float:
     return round(sum(w * j.scores.get(k, 0) for k, w in weights.items()) / sum(weights.values()), 3)
 
 
-def _same_story(a: Candidate, b: Candidate, episodes, thr: float) -> bool:
-    if _jaccard(_words(a.beat), _words(b.beat)) >= thr:
+def _same_story(a: Candidate, b: Candidate, episodes, thr: float, idf: dict | None = None) -> bool:
+    if _same_words(_words(a.beat), _words(b.beat), thr, idf):
         return True
     shared = sum(max(0.0, min(sa.end, sb.end) - max(sa.start, sb.start))   # overlapping footage
                  for sa in a.segments for sb in b.segments if sa.episode == sb.episode)
@@ -36,7 +67,7 @@ def _same_story(a: Candidate, b: Candidate, episodes, thr: float) -> bool:
                              if bl.kind == "dialogue"))
         tb = _words(" ".join(bl.text for s in b.segments for bl in clip_blocks(episodes[s.episode], s.start, s.end)
                              if bl.kind == "dialogue"))
-        if _jaccard(ta, tb) >= 0.5:
+        if _same_words(ta, tb, 0.5, idf):
             return True
     return False
 
@@ -76,10 +107,11 @@ def rank(cands: list[Candidate], vals: dict[str, Validation], judgements: dict[s
             pool.append(r)
 
     pool.sort(key=lambda r: (-r.composite, -r.judgement.scores.get("cliffhanger", 0), r.candidate.total))
+    idf = series_idf(episodes)
     kept: list[RankedPromo] = []
     per_ep: dict[int, int] = {}
     for r in pool:
-        dup = next((k for k in kept if _same_story(r.candidate, k.candidate, episodes, rc["dedupe_similarity"])), None)
+        dup = next((k for k in kept if _same_story(r.candidate, k.candidate, episodes, rc["dedupe_similarity"], idf)), None)
         if dup:
             r.status, r.duplicate_of = "duplicate", dup.promo_id
             continue

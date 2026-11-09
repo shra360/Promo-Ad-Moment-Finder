@@ -5,3 +5,4 @@ anthropic>=0.40
 streamlit>=1.40
 pandas>=2.0
 pytest>=8.0
+# optional, only to use a trained model in model/:  transformers torch sentencepiece

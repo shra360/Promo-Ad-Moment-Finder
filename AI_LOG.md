@@ -39,6 +39,15 @@ What each AI tool did, and the mistakes caught along the way. Source material fo
 | 14 | The key check retried an unreachable API for minutes before failing | It hung in the cloud workspace, which cannot reach Google | The check now uses one retry and a 30 s timeout; it fails in about 5 s with the reason |
 | 15 | Neither Claude's cloud workspace nor the Linux shell on the user's computer can reach Google's API (network allowlist) | `curl` to generativelanguage.googleapis.com failed from both | The Gemini run happens in the user's own Windows terminal via `run_eval.bat` |
 
+### Found by testing on the ReelBench synthetic pack and stress tests
+
+| # | What went wrong | How it was caught | Fix |
+| --- | --- | --- | --- |
+| 16 | The duplicate check removed different episodes' promos as "the same story" because the show repeats stock lines and sound cues | ReelBench funnel: 95 of 320 ground-truth matches were dropped as duplicates | Rarity-weighted word overlap; shared words must carry real information |
+| 17 | Claude's first version of that fix fell back to plain word overlap when every shared word was stock, which re-created the bug; the numbers did not move | Re-running the benchmark before/after showed no change, then tracing which rule fired | Removed the fallback; weights never reach exactly zero |
+| 18 | The baseline penalised clips ending in an episode's last 10 s, so it rarely proposed end-of-episode promos | ReelBench: 57 of 71 never-proposed windows were end-of-episode | Penalty removed at the proposal stage |
+| 19 | Four plausible spellings of the format (no bold labels, times without parentheses, an hours field, an en dash separator) parsed silently into 0 blocks or untimed blocks | `eval/stress.py` format-drift test | Tolerant parser; episodes without usable timings are reported as UNUSABLE and skipped |
+
 The answer key in `eval/labels/` was written by Claude agents, not by a person. Where it matters, it is the
 same model family as a Claude-run pipeline would be, so scores against it would flatter that pipeline; the
 Gemini run avoids this.

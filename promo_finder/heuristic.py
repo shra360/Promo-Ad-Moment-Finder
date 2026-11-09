@@ -64,7 +64,7 @@ def propose(ep: Episode, n: int = 4, min_total: float = 20, max_total: float = 6
         for cs, c in cliffs:
             span = c.end - h.start
             if min_total + 2 <= span <= max_total - 5:
-                bonus = 1.5 * _ends_open(c) + (1.0 if ep.duration - c.end > 10 else 0)
+                bonus = 1.5 * _ends_open(c)     # no end-of-episode penalty: proposals favour recall
                 pairs.append((1.2 * hs + cs + bonus, h, c))
     pairs.sort(key=lambda x: -x[0])
     chosen = []

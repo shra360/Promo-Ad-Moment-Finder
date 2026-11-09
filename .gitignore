@@ -3,6 +3,13 @@ data/
 runs/
 audit/
 reference.json
+# answer keys and agreement files paraphrase the confidential plots
+eval/labels/
+eval/labels_b/
+eval/views/
+eval/reference*.json
+eval/agreement.json
+bench/
 *.zip
 
 # Local state and secrets

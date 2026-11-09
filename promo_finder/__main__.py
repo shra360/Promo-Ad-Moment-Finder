@@ -28,6 +28,14 @@ def main():
     r.add_argument("--baseline", default=None, help="a baseline run folder to compare against")
     r.add_argument("--episodes", default=None, help="e.g. 1-5 or 1,10,20 to run a subset")
     r.add_argument("--title", default=None, help="series title for reports (default: input folder name)")
+    r.add_argument("--judge-samples", dest="judge_samples", type=int, default=None)
+    sz = sub.add_parser("sensational", help="grade every moment for heat; top 3 windows of 20-60 s")
+    sz.add_argument("--input", required=True, help="folder or .zip of episode .txt files")
+    sz.add_argument("--out", required=True)
+    sz.add_argument("--mode", choices=["llm", "baseline"], default="llm", help="baseline = keyword grader, no key")
+    sz.add_argument("--episodes", default=None)
+    sz.add_argument("--title", default=None)
+    sz.add_argument("--top", type=int, default=None, help="how many windows (default 3)")
     pg = sub.add_parser("ping", help="check that the model and API key work (one tiny call)")
     pg.add_argument("--provider", default=None)
     pg.add_argument("--model", default=None)
@@ -52,8 +60,29 @@ def main():
             cfg["episode_filter"] = args.episodes
         if args.title:
             cfg["title"] = args.title
-        m = run(args.input, args.out, cfg, mode=args.mode, reference=args.reference, baseline_dir=args.baseline)
+        if args.judge_samples:
+            cfg["pipeline"]["judge_samples"] = args.judge_samples
+        from .pipeline import PendingStop
+        try:
+            m = run(args.input, args.out, cfg, mode=args.mode, reference=args.reference, baseline_dir=args.baseline)
+        except PendingStop as e:
+            raise SystemExit(f"WAITING: {e}. Answer them, then run the same command again.")
         print(json.dumps(m["funnel"], indent=1))
+    elif args.cmd == "sensational":
+        from .pipeline import run_sensational
+        cfg = load_config()
+        if args.mode == "llm" and cfg["llm"]["provider"] in ("gemini", "openai_compat", "anthropic") \
+                and not cfg["llm"].get("api_key"):
+            raise SystemExit("No API key found. Put GEMINI_API_KEY=... in the .env file, or use --mode baseline.")
+        for k, v in (("episode_filter", args.episodes), ("title", args.title)):
+            if v:
+                cfg[k] = v
+        if args.top:
+            cfg["pipeline"]["top_windows"] = args.top
+        r = run_sensational(args.input, args.out, cfg, mode=args.mode)
+        for w in r["top"]:
+            print(f"#{w['rank']}  Ep {w['episode']}  {w['start_ts']}-{w['end_ts']}  {w['duration']:.1f} s  "
+                  f"score {w['score']:.2f}  {', '.join(w['tags'])}")
     elif args.cmd == "ping":
         from .llm import LLM, LLMError
         cfg = load_config(None, {"llm": {"provider": args.provider, "model": args.model}})

@@ -33,6 +33,10 @@ class LLMError(RuntimeError):
     pass
 
 
+class PendingAnswer(LLMError):
+    """provider 'external': the prompt was written to <exchange>/pending/ and awaits an answer file."""
+
+
 def load_prompt(name: str) -> tuple[str, str]:
     raw = (PROMPT_DIR / f"{name}.md").read_text(encoding="utf-8")
     first, _, body = raw.partition("\n")
@@ -101,6 +105,9 @@ class LLM:
         self.usage = {"calls": 0, "cached": 0, "input_tokens": 0, "output_tokens": 0, "errors": 0}
         self.error_samples: list[str] = []
         self.stop_reason: str | None = None     # set once a daily quota is exhausted
+        self.pending: set[str] = set()           # provider 'external': prompts waiting for an answer
+        self.exchange = Path(llm_cfg.get("exchange_dir") or ".exchange")
+        self._meta = threading.local()
 
     # ---------- provider plumbing ----------
     def _get_client(self):
@@ -147,7 +154,25 @@ class LLM:
                                        system=SYSTEM, messages=messages)
             text = "".join(getattr(b, "text", "") or "" for b in r.content)
             return text, r.usage.input_tokens, r.usage.output_tokens
+        if self.provider == "external":
+            return self._external(messages, temperature)
         raise LLMError("mock provider has no raw call")
+
+    def _external(self, messages, temperature) -> tuple[str, int, int]:
+        """Answer files instead of an API: any model, agent or person can answer the exact prompts."""
+        key = hashlib.sha256(json.dumps([self.model, SYSTEM, messages]).encode()).hexdigest()[:32]
+        ans = self.exchange / "answers" / f"{key}.txt"
+        if ans.exists():
+            text = ans.read_text(encoding="utf-8")
+            return text, sum(len(m["content"]) for m in messages) // 4, len(text) // 4
+        (self.exchange / "pending").mkdir(parents=True, exist_ok=True)
+        meta = getattr(self._meta, "value", {}) or {}
+        (self.exchange / "pending" / f"{key}.json").write_text(json.dumps(
+            {"key": key, "prompt": meta.get("prompt"), "tag": meta.get("tag"), "round": len(messages) // 2 + 1,
+             "system": SYSTEM, "messages": messages}, indent=1), encoding="utf-8")
+        with self._lock:
+            self.pending.add(key)
+        raise PendingAnswer(key)
 
     def _call_with_retries(self, messages, temperature) -> tuple[str, int, int]:
         delay, tries = 4.0, int(self.cfg.get("max_retries", 6))
@@ -185,8 +210,11 @@ class LLM:
                       sample: int = 0, check=None, tag: str = "") -> dict:
         """Returns {"data": dict, "attempts": [raw texts], "problems": [remaining problems], ...}.
         Raises LLMError when no usable JSON object came back."""
+        self._meta.value = {"prompt": prompt_name, "tag": tag}
         try:
             return self._complete(prompt_name, variables, temperature, sample, check, tag)
+        except PendingAnswer:
+            raise
         except LLMError as e:
             with self._lock:
                 self.usage["errors"] += 1

@@ -20,7 +20,11 @@ pipeline:
   min_total: 20.0
   max_total: 60.0
   min_segment: 3.0
-  hook_window: 1.0            # hook block must start within this many seconds of the clip start
+  hook_window: 1.0
+  # sensationality mode
+  ideal_length: 40.0          # preferred window length in seconds (any 20-60 s window is allowed)
+  top_windows: 3              # how many windows to return for the show
+  top_max_per_episode: 1      # at most this many of the top windows from one episode (null = no limit)            # hook block must start within this many seconds of the clip start
 
 ranking:
   weights: {hook: 0.25, cliffhanger: 0.25, standalone: 0.20, coherence: 0.10, intensity: 0.10, curiosity: 0.10}

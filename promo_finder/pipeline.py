@@ -58,11 +58,24 @@ def load_input(path: str | Path) -> tuple[dict, str, list[str]]:
         if ep.episode in episodes:
             issues.append(f"{f.name}: duplicate episode {ep.episode}; skipped")
             continue
-        episodes[ep.episode] = ep
         issues += [f"{f.name}: {i}" for i in ep.issues]
+        if any(i.startswith("UNUSABLE") for i in ep.issues):
+            continue                       # reported, never silently half-processed
+        episodes[ep.episode] = ep
     if not episodes:
-        raise ValueError(f"No episode screenplays found in {path}")
+        why = "; ".join(i for i in issues if "UNUSABLE" in i)[:400]
+        raise ValueError(f"No usable episode screenplays found in {path}" + (f": {why}" if why else ""))
     return episodes, title if files else path.name, issues
+
+
+class PendingStop(RuntimeError):
+    """provider 'external': prompts are waiting for answers; rerun the same command once they are written."""
+
+
+def _stop_if_pending(*llms):
+    waiting = sorted({k for m in llms if m for k in m.pending})
+    if waiting:
+        raise PendingStop(f"{len(waiting)} prompt(s) waiting for answers in {llms[0].exchange / 'pending'}")
 
 
 def run(input_path, out_dir, cfg: dict, mode: str = "llm", progress=None, reference=None,
@@ -106,6 +119,7 @@ def run(input_path, out_dir, cfg: dict, mode: str = "llm", progress=None, refere
     if llm:
         say("building the series bible", 0.08)
         bible = stages.run_bible(llm, episodes, title)
+        _stop_if_pending(llm)
     else:
         bible = {"premise": "", "characters": [],
                  "aliases": {str(n): {b.speaker: b.speaker for b in ep.blocks() if b.kind == "dialogue"}
@@ -124,6 +138,8 @@ def run(input_path, out_dir, cfg: dict, mode: str = "llm", progress=None, refere
                                                                 cfg["pipeline"]["max_total"])}
                  for n, ep in episodes.items()}
         src, prefix = "heuristic", "H"
+    if llm:
+        _stop_if_pending(llm)
     (out / "proposals.json").write_text(json.dumps({str(k): v for k, v in sorted(mined.items())}, indent=1))
     if llm and llm.stop_reason:
         done = sum(1 for v in mined.values() if not v.get("error"))
@@ -155,6 +171,7 @@ def run(input_path, out_dir, cfg: dict, mode: str = "llm", progress=None, refere
         say("building cross-episode montages", 0.55)
         base = [c for c in cands if vals[c.promo_id].passed and len(c.segments) == 1]
         mont = stages.run_montage(llm, base, bible, ctx, cfg)
+        _stop_if_pending(llm)
         (out / "montage.json").write_text(json.dumps(mont, indent=1, default=str), encoding="utf-8")
         for k, prop in enumerate(mont.get("promos", []), 1):
             proposed += 1
@@ -178,6 +195,8 @@ def run(input_path, out_dir, cfg: dict, mode: str = "llm", progress=None, refere
                                       progress=lambda m, f: say(m, 0.62 + 0.3 * f))
     else:
         judgements = stages.heuristic_judge_all(valid, episodes)
+    if llm:
+        _stop_if_pending(llm, judge_llm)
     if llm and (llm.stop_reason or (judge_llm and judge_llm.stop_reason)):
         done = sum(1 for v in judgements.values() if v)
         raise RuntimeError(f"{(judge_llm or llm).stop_reason or llm.stop_reason} "
@@ -276,3 +295,34 @@ def write_report(rows: list[RankedPromo], title: str, mode: str, cfg: dict, epis
     L += ["", "Rejected, below-gate and duplicate candidates are in promos_ranked.csv with reasons; "
               "eval_report.md lists where the tool picks badly.", ""]
     return "\n".join(L)
+
+
+def run_sensational(input_path, out_dir, cfg: dict, mode: str = "llm", progress=None) -> dict:
+    """Sensationality mode: grade every block for heat, return the top 20-60 s windows."""
+    from . import sensational
+    say = progress or (lambda msg, frac=None: print(msg, flush=True))
+    episodes, title, issues = load_input(input_path)
+    title = cfg.get("title") or title
+    if cfg.get("episode_filter"):
+        keep = parse_range(cfg["episode_filter"])
+        episodes = {n: e for n, e in episodes.items() if n in keep}
+        if not episodes:
+            raise ValueError(f"No episodes match the filter '{cfg['episode_filter']}'")
+    cfg = dict(cfg, title=title)
+    say(f"parsed {len(episodes)} episodes of '{title}'", 0.05)
+    llm = None
+    if mode == "llm":
+        mock = stages.mock_respond if cfg["llm"]["provider"] == "mock" else None
+        llm = LLM(cfg["llm"], Path(cfg.get("cache_dir", ".cache/llm")), Path(out_dir) / "llm_calls.jsonl")
+        if mock:
+            llm = None          # the mock has no grader of its own: keyword grades
+    res = sensational.run(episodes, Path(out_dir), cfg, llm=llm, progress=say)
+    if llm:
+        _stop_if_pending(llm)
+        # Daily quota hit mid-run: keep the results (those episodes used fallback grades) instead of failing.
+        # Finished calls are cached, so running again after the reset upgrades only the episodes that fell back.
+        res["limit_reached"] = bool(llm.stop_reason)
+    res["parse_issues"] = issues
+    (Path(out_dir) / "sensational.json").write_text(json.dumps(res, indent=1), encoding="utf-8")
+    say(f"done: top {len(res['top'])} windows written to {out_dir}", 1.0)
+    return res

@@ -1,11 +1,51 @@
 # Promo Finder
 
+Finds the **top 3 most sensational 20-60 second promo windows** in a microdrama's screenplays: Gemini grades every
+moment for heat (emotion, conflict, shock, slaps and other physical action, humiliation, open questions); code
+turns the grades into a heat curve and picks the hottest windows, cut only where nobody is mid-sentence.
+Built for the Kuku AI Generalist assignment, Problem 1. The 2-page report is `report/Promo_Finder_Report.pdf`.
+
+## Start
+
+```
+pip install -r requirements.txt
+python app.py
+```
+
+`python app.py` opens the app in your browser (or double-click `start_app.bat` on Windows). Pick the grader, the
+episodes (the 50 Kuku episodes in `data/raw` are preselected) and press **Find the top windows**. Without a key,
+choose the keyword grader.
+
+Command line: `python -m promo_finder sensational --input data/raw --out runs/my_run` (add `--mode baseline` for
+the keyword grader). Outputs: `sensational.md` (top 3 with start, end and duration), `sensational_top.csv`,
+`sensational_per_episode.csv` (top 3 in every episode), `block_grades.json`.
+
+The earlier full pipeline (hook / cliffhanger / blind judge / ranking) is still here: `python -m promo_finder run ...`
+and `streamlit run app_promo_pipeline.py`. The rest of this file describes it.
+
+
 Finds the best 20-60 second promos in a microdrama's screenplays, with exact cut points, and ranks them.
 Built for the Kuku AI Generalist assignment, Problem 1 ("Find the Promos").
 
 A good promo opens on a hook in the first 3 seconds, ends on a cliffhanger, and makes sense to someone who has never seen the show. For every promo the tool gives the episode and start and end time of each segment, the hook, the cliffhanger, why it works, scores, and any reason to check it before posting.
 
 **The model picks moments; code sets every timestamp.** The model only names screenplay blocks (`E021-S01-B004`). Code looks up their times, snaps each cut to a point where nobody is mid-sentence, checks lengths and rules, and ranks.
+
+## Where the API key goes
+
+Only one place is needed. Pick one:
+
+| Option | What to do |
+| --- | --- |
+| `.env` file (recommended) | Create a file named `.env` in this folder (next to `config.yaml`) with one line: `GEMINI_API_KEY=your-key`. `.env.example` shows the format. `.env` is git-ignored, so it never reaches GitHub |
+| Paste when asked | `run_eval.bat` and `run_bench.bat` ask for the key if there is no `.env`; it is kept for that window only |
+| Environment variable | `set GEMINI_API_KEY=your-key` in the same terminal before running |
+| Streamlit app | Paste it in the sidebar's *API key* box, or on Streamlit Cloud add `GEMINI_API_KEY` under the app's *Secrets* |
+
+Other providers use the same `.env` file: `LLM_PROVIDER=anthropic` plus `ANTHROPIC_API_KEY=...`, or
+`LLM_PROVIDER=openai_compat` plus `LLM_BASE_URL=...`, `LLM_API_KEY=...` and `LLM_MODEL=...`.
+`python -m promo_finder ping` checks the key with one tiny call. The key is never written to any output file
+(the run manifest records only whether one was set).
 
 ## Quick start (Windows)
 
@@ -50,7 +90,7 @@ No code change. Set environment variables (or edit `config.yaml`, or use the app
 
 **Quality first.** Use the strongest model you have for the judge. Keep `judge_samples: 2` so each clip is scored twice and disagreements are reported. Lower `max_workers` if the free tier rate-limits you. Every model call is cached in `.cache/llm/`, so an interrupted run resumes where it stopped and a rerun costs nothing.
 
-**Size of a full run on the 50-episode pack:** about 370 model calls, roughly 0.65M input and 0.2M output tokens with the default settings.
+**Size of a full run on the 50-episode pack:** about 450 model calls, roughly 0.75M input and 0.2M output tokens with the default settings (most of it is the judge: about 200 valid clips, scored twice).
 
 ## How it works
 
@@ -90,6 +130,15 @@ windows the same way, so every number has a floor to compare against.
 
 **Your reviews.** The app's *Review* tab mixes the top 10 with 5 valid candidates that did not make the list,
 shuffled and unscored; your approve/reject calls give precision@10 against a blind control.
+
+## ReelBench (synthetic pack) and stress tests
+
+`data/reelbench/` holds a synthetic pack of 5 shows, 160 episodes, with ground-truth promo windows.
+`run_bench.bat` runs the no-AI baseline and the AI pipeline on it (8 episodes per show by default, `all` for
+every episode) and scores both by IoU against the ground truth, next to two controls: a fixed-time guess and
+random cuts. `python eval/stress.py --bench data/reelbench --real data/raw` checks the parser against 14
+alternative spellings of the screenplay format, and checks that picks follow the story when it moves in time.
+Results and what they mean: `EVALUATION.md`.
 
 ## New episode sets
 

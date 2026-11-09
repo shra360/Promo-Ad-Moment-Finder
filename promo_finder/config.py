@@ -16,6 +16,7 @@ PROVIDER_DEFAULTS = {
     "anthropic": {"base_url": None, "key_env": ["ANTHROPIC_API_KEY"]},
     "openai_compat": {"base_url": None, "key_env": ["LLM_API_KEY", "OPENAI_API_KEY"]},
     "mock": {"base_url": None, "key_env": []},
+    "external": {"base_url": None, "key_env": []},     # answers come from files (any model, agent or person)
 }
 
 
